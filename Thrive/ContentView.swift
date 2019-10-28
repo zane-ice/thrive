@@ -14,17 +14,34 @@ struct ContentView: View {
     var body: some View {
     
         TabView(selection: $selection){
-            Text("Thrive")
-                .font(.title)
-				.fontWeight(.black)
-				.tabItem {
-                    VStack {
-                        Image("home")
-                        Text("Home")
-                    }
-                }
-                .tag(0)
-            Text("Second View")
+			VStack {
+				Text("Thrive")
+					.font(.title)
+					.fontWeight(.bold)
+					.tabItem {
+						VStack {
+							Image("home")
+							Text("Home")
+						}
+					}
+				.tag(0)
+				
+				HStack {
+					Text("Meet the Health Center")
+					Text("Identity")
+				}
+				HStack {
+					Text("Wellness")
+					Text("Sexual Harrassment")
+				}
+				HStack {
+					Text("Time Management")
+					Text("Mental Disorders")
+				}
+			
+			}
+			
+            Text("Contact")
                 .font(.title)
                 .tabItem {
                     VStack {
