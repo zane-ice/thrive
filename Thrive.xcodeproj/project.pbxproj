@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAAB37132369BD2000B8B6D8 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB37122369BD2000B8B6D8 /* ContactView.swift */; };
+		AAAB37152369BD4400B8B6D8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB37142369BD4400B8B6D8 /* HomeView.swift */; };
 		AABCBD55235F50DB00B759F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD54235F50DB00B759F3 /* AppDelegate.swift */; };
 		AABCBD57235F50DB00B759F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD56235F50DB00B759F3 /* SceneDelegate.swift */; };
 		AABCBD59235F50DB00B759F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD58235F50DB00B759F3 /* ContentView.swift */; };
@@ -15,7 +17,6 @@
 		AABCBD61235F50E300B759F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AABCBD5F235F50E300B759F3 /* LaunchScreen.storyboard */; };
 		AABCBD6C235F50E300B759F3 /* ThriveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD6B235F50E300B759F3 /* ThriveTests.swift */; };
 		AABCBD77235F50E300B759F3 /* ThriveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD76235F50E300B759F3 /* ThriveUITests.swift */; };
-		AABCBD852360FD5200B759F3 /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = AABCBD842360FD5200B759F3 /* Home.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AAAB37122369BD2000B8B6D8 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		AAAB37142369BD4400B8B6D8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		AABCBD51235F50DB00B759F3 /* Thrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AABCBD54235F50DB00B759F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AABCBD56235F50DB00B759F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +53,6 @@
 		AABCBD72235F50E300B759F3 /* ThriveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThriveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AABCBD76235F50E300B759F3 /* ThriveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThriveUITests.swift; sourceTree = "<group>"; };
 		AABCBD78235F50E300B759F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AABCBD842360FD5200B759F3 /* Home.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Home.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +106,12 @@
 				AABCBD54235F50DB00B759F3 /* AppDelegate.swift */,
 				AABCBD56235F50DB00B759F3 /* SceneDelegate.swift */,
 				AABCBD58235F50DB00B759F3 /* ContentView.swift */,
+				AAAB37122369BD2000B8B6D8 /* ContactView.swift */,
+				AAAB37142369BD4400B8B6D8 /* HomeView.swift */,
 				AABCBD5A235F50E300B759F3 /* Assets.xcassets */,
 				AABCBD5F235F50E300B759F3 /* LaunchScreen.storyboard */,
 				AABCBD62235F50E300B759F3 /* Info.plist */,
 				AABCBD5C235F50E300B759F3 /* Preview Content */,
-				AABCBD842360FD5200B759F3 /* Home.xib */,
 			);
 			path = Thrive;
 			sourceTree = "<group>";
@@ -245,7 +248,6 @@
 			files = (
 				AABCBD61235F50E300B759F3 /* LaunchScreen.storyboard in Resources */,
 				AABCBD5E235F50E300B759F3 /* Preview Assets.xcassets in Resources */,
-				AABCBD852360FD5200B759F3 /* Home.xib in Resources */,
 				AABCBD5B235F50E300B759F3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +276,8 @@
 				AABCBD55235F50DB00B759F3 /* AppDelegate.swift in Sources */,
 				AABCBD57235F50DB00B759F3 /* SceneDelegate.swift in Sources */,
 				AABCBD59235F50DB00B759F3 /* ContentView.swift in Sources */,
+				AAAB37152369BD4400B8B6D8 /* HomeView.swift in Sources */,
+				AAAB37132369BD2000B8B6D8 /* ContactView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

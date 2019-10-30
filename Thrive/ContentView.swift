@@ -10,7 +10,7 @@
 
 //  Copyright © 2019 Thrive. All rights reserved.
 
-//
+// Zane
 
 
 import SwiftUI
@@ -19,54 +19,30 @@ import SwiftUI
 struct ContentView: View {
 
     @State private var selection = 0
-
- 
-
+	
     var body: some View {
-
-    
-
+		
         TabView(selection: $selection){
-
             Text("Thrive")
-
-                .font(.title)
-
-.fontWeight(.black)
-
-.tabItem {
-
-                    VStack {
-
-                        Image("home")
-
-                        Text("Home")
-
+			.font(.title)
+			.fontWeight(.black)
+			.tabItem {
+			
+			VStack {
+				Image(systemName: "house.fill")
+				Text("Home").tag(0)
                     }
-
                 }
-
-                .tag(0)
-
-            Text("Second View")
-
-                .font(.title)
-
-                .tabItem {
-
-                    VStack {
-
-                        Image("contact")
-
-                        Text("Contact")
-
+			
+			Text("Contact")
+			.font(.title)
+			.tabItem {
+			VStack {
+				Image(systemName: "phone.circle.fill")
+				Text("Contact").tag(1)
                     }
-
                 }
-
-                .tag(1)
-
-        }//
+        }
 
     }
 
