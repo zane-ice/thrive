@@ -8,20 +8,24 @@
 
 import SwiftUI
 
-struct Mental_Health: View {
+struct MentalHealth: View {
     var body: some View {
-        VStack (alignment:.leading) {
+        VStack () {
             Text("Mental Health")
                 .font(.title)
-            Text("Resources")
+            NavigationView(){
+                NavigationLink(destination: Text("info")){
+                    Text("Depression")
+                }
+            }
         }
     }
 }
 
 
-struct Mental_Health_Previews: PreviewProvider {
+struct MentalHealth_Previews: PreviewProvider {
     static var previews: some View {
-        Mental_Health()
+        MentalHealth()
         
     }
 }

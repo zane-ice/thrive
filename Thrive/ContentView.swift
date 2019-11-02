@@ -25,7 +25,7 @@ struct ContentView: View {
 		NavigationView(){
 			VStack (spacing: 50) {
 				HStack(spacing: 50) {
-					NavigationLink(destination:Mental_Health()){
+					NavigationLink(destination:MentalHealth()){
 						Text("Mental Health")
 					}
 					NavigationLink(destination:Identity()){
