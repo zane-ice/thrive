@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AAAB37132369BD2000B8B6D8 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB37122369BD2000B8B6D8 /* ContactView.swift */; };
 		AAAB37152369BD4400B8B6D8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB37142369BD4400B8B6D8 /* HomeView.swift */; };
+		AAAB3717236E042500B8B6D8 /* Mental Health.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB3716236E042500B8B6D8 /* Mental Health.swift */; };
 		AABCBD55235F50DB00B759F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD54235F50DB00B759F3 /* AppDelegate.swift */; };
 		AABCBD57235F50DB00B759F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD56235F50DB00B759F3 /* SceneDelegate.swift */; };
 		AABCBD59235F50DB00B759F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD58235F50DB00B759F3 /* ContentView.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		AAAB37122369BD2000B8B6D8 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		AAAB37142369BD4400B8B6D8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AAAB3716236E042500B8B6D8 /* Mental Health.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mental Health.swift"; sourceTree = "<group>"; };
 		AABCBD51235F50DB00B759F3 /* Thrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AABCBD54235F50DB00B759F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AABCBD56235F50DB00B759F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				AABCBD58235F50DB00B759F3 /* ContentView.swift */,
 				AAAB37122369BD2000B8B6D8 /* ContactView.swift */,
 				AAAB37142369BD4400B8B6D8 /* HomeView.swift */,
+				AAAB3716236E042500B8B6D8 /* Mental Health.swift */,
 				AABCBD5A235F50E300B759F3 /* Assets.xcassets */,
 				AABCBD5F235F50E300B759F3 /* LaunchScreen.storyboard */,
 				AABCBD62235F50E300B759F3 /* Info.plist */,
@@ -276,6 +279,7 @@
 				AABCBD55235F50DB00B759F3 /* AppDelegate.swift in Sources */,
 				AABCBD57235F50DB00B759F3 /* SceneDelegate.swift in Sources */,
 				AABCBD59235F50DB00B759F3 /* ContentView.swift in Sources */,
+				AAAB3717236E042500B8B6D8 /* Mental Health.swift in Sources */,
 				AAAB37152369BD4400B8B6D8 /* HomeView.swift in Sources */,
 				AAAB37132369BD2000B8B6D8 /* ContactView.swift in Sources */,
 			);
