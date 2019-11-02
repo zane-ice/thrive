@@ -22,11 +22,24 @@ struct ContentView: View {
 	
     var body: some View {
 		
-        TabView(selection: $selection){
-            Text("Thrive")
-			.font(.title)
-			.fontWeight(.black)
+		NavigationView(){
+			VStack {
+				NavigationLink(destination:Mental_Health()){
+					Text("Mental Health")
+				}
+				NavigationLink(destination:Mental_Health()){
+					Text("Mental Health")
+				}
+			}
+		}
+		
+        /*TabView(selection: $selection){
+			VStack{
+            Text("Thrive").font(.title).fontWeight(.black)
+			}
+			
 			.tabItem {
+
 			
 			VStack {
 				Image(systemName: "house.fill")
@@ -42,7 +55,7 @@ struct ContentView: View {
 				Text("Contact").tag(1)
                     }
                 }
-        }
+        } */
 
     }
 

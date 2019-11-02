@@ -10,12 +10,18 @@ import SwiftUI
 
 struct Mental_Health: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        VStack (alignment:.leading) {
+            Text("Mental Health")
+                .font(.title)
+            Text("Resources")
+        }
     }
 }
+
 
 struct Mental_Health_Previews: PreviewProvider {
     static var previews: some View {
         Mental_Health()
+        
     }
 }

@@ -8,9 +8,17 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        NavigationView(){
+            NavigationLink(destination: Mental_Health()){
+                Text("hi")
+            }
+            
+        }
     }
 }
+
+
+
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
