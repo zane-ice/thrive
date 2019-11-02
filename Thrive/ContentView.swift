@@ -33,19 +33,12 @@ struct ContentView: View {
 					}
 				}
 				HStack (spacing: 50){
-					NavigationLink(destination:Mental_Health()){
-						Text("Mental Health")
-					}
-					NavigationLink(destination:Mental_Health()){
-						Text("Identity")
-					}
+					Text("Substance Use")
+					Text("Sexual Wellness")
 				}
 				HStack (spacing: 50){
-					NavigationLink(destination:Mental_Health()){
-						Text("Mental Health")
-					}
-					NavigationLink(destination:Mental_Health()){
-						Text("Identity")
+					Text("Meet the Health Center")
+					Text("Time Management")
 					}
 				}
 			}
@@ -77,7 +70,7 @@ struct ContentView: View {
 
     }
 
-}
+
 
 
 struct ContentView_Previews: PreviewProvider {

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AAAB37132369BD2000B8B6D8 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB37122369BD2000B8B6D8 /* ContactView.swift */; };
-		AAAB37152369BD4400B8B6D8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB37142369BD4400B8B6D8 /* HomeView.swift */; };
 		AAAB3717236E042500B8B6D8 /* MentalHealth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB3716236E042500B8B6D8 /* MentalHealth.swift */; };
 		AAAB371B236E109400B8B6D8 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB371A236E109400B8B6D8 /* Identity.swift */; };
 		AAAB371D236E11F600B8B6D8 /* SubstanceUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB371C236E11F600B8B6D8 /* SubstanceUse.swift */; };
@@ -44,7 +43,6 @@
 
 /* Begin PBXFileReference section */
 		AAAB37122369BD2000B8B6D8 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
-		AAAB37142369BD4400B8B6D8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		AAAB3716236E042500B8B6D8 /* MentalHealth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealth.swift; sourceTree = "<group>"; };
 		AAAB371A236E109400B8B6D8 /* Identity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
 		AAAB371C236E11F600B8B6D8 /* SubstanceUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubstanceUse.swift; sourceTree = "<group>"; };
@@ -125,7 +123,6 @@
 				AAAB3720236E125300B8B6D8 /* SexualWellness.swift */,
 				AAAB371A236E109400B8B6D8 /* Identity.swift */,
 				AAAB37122369BD2000B8B6D8 /* ContactView.swift */,
-				AAAB37142369BD4400B8B6D8 /* HomeView.swift */,
 				AABCBD5A235F50E300B759F3 /* Assets.xcassets */,
 				AABCBD5F235F50E300B759F3 /* LaunchScreen.storyboard */,
 				AABCBD62235F50E300B759F3 /* Info.plist */,
@@ -297,7 +294,6 @@
 				AABCBD59235F50DB00B759F3 /* ContentView.swift in Sources */,
 				AAAB371D236E11F600B8B6D8 /* SubstanceUse.swift in Sources */,
 				AAAB3717236E042500B8B6D8 /* MentalHealth.swift in Sources */,
-				AAAB37152369BD4400B8B6D8 /* HomeView.swift in Sources */,
 				AAAB3725236E127A00B8B6D8 /* MTHC.swift in Sources */,
 				AAAB37132369BD2000B8B6D8 /* ContactView.swift in Sources */,
 				AAAB371B236E109400B8B6D8 /* Identity.swift in Sources */,
