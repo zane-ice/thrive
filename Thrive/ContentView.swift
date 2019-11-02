@@ -23,12 +23,30 @@ struct ContentView: View {
     var body: some View {
 		
 		NavigationView(){
-			VStack {
-				NavigationLink(destination:Mental_Health()){
-					Text("Mental Health")
+			VStack (spacing: 50) {
+				HStack(spacing: 50) {
+					NavigationLink(destination:Mental_Health()){
+						Text("Mental Health")
+					}
+					NavigationLink(destination:Identity()){
+						Text("Identity")
+					}
 				}
-				NavigationLink(destination:Mental_Health()){
-					Text("Mental Health")
+				HStack (spacing: 50){
+					NavigationLink(destination:Mental_Health()){
+						Text("Mental Health")
+					}
+					NavigationLink(destination:Mental_Health()){
+						Text("Identity")
+					}
+				}
+				HStack (spacing: 50){
+					NavigationLink(destination:Mental_Health()){
+						Text("Mental Health")
+					}
+					NavigationLink(destination:Mental_Health()){
+						Text("Identity")
+					}
 				}
 			}
 		}

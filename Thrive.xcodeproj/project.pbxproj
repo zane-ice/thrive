@@ -10,6 +10,7 @@
 		AAAB37132369BD2000B8B6D8 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB37122369BD2000B8B6D8 /* ContactView.swift */; };
 		AAAB37152369BD4400B8B6D8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB37142369BD4400B8B6D8 /* HomeView.swift */; };
 		AAAB3717236E042500B8B6D8 /* MentalHealth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB3716236E042500B8B6D8 /* MentalHealth.swift */; };
+		AAAB371B236E109400B8B6D8 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB371A236E109400B8B6D8 /* Identity.swift */; };
 		AABCBD55235F50DB00B759F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD54235F50DB00B759F3 /* AppDelegate.swift */; };
 		AABCBD57235F50DB00B759F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD56235F50DB00B759F3 /* SceneDelegate.swift */; };
 		AABCBD59235F50DB00B759F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD58235F50DB00B759F3 /* ContentView.swift */; };
@@ -41,6 +42,7 @@
 		AAAB37122369BD2000B8B6D8 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		AAAB37142369BD4400B8B6D8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		AAAB3716236E042500B8B6D8 /* MentalHealth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealth.swift; sourceTree = "<group>"; };
+		AAAB371A236E109400B8B6D8 /* Identity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
 		AABCBD51235F50DB00B759F3 /* Thrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AABCBD54235F50DB00B759F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AABCBD56235F50DB00B759F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				AABCBD56235F50DB00B759F3 /* SceneDelegate.swift */,
 				AABCBD58235F50DB00B759F3 /* ContentView.swift */,
 				AAAB3716236E042500B8B6D8 /* MentalHealth.swift */,
+				AAAB371A236E109400B8B6D8 /* Identity.swift */,
 				AAAB37122369BD2000B8B6D8 /* ContactView.swift */,
 				AAAB37142369BD4400B8B6D8 /* HomeView.swift */,
 				AABCBD5A235F50E300B759F3 /* Assets.xcassets */,
@@ -282,6 +285,7 @@
 				AAAB3717236E042500B8B6D8 /* MentalHealth.swift in Sources */,
 				AAAB37152369BD4400B8B6D8 /* HomeView.swift in Sources */,
 				AAAB37132369BD2000B8B6D8 /* ContactView.swift in Sources */,
+				AAAB371B236E109400B8B6D8 /* Identity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
