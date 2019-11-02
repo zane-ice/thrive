@@ -33,8 +33,11 @@ struct ContentView: View {
 					}
 				}
 				HStack (spacing: 50){
+					NavigationLink(destination:SubstanceUse()){
 					Text("Substance Use")
-					Text("Sexual Wellness")
+					}
+					
+					
 				}
 				HStack (spacing: 50){
 					Text("Meet the Health Center")
@@ -68,7 +71,7 @@ struct ContentView: View {
                 }
         } */
 
-    }
+    
 
 
 
@@ -81,4 +84,5 @@ struct ContentView_Previews: PreviewProvider {
 
     }
 
+}
 }
