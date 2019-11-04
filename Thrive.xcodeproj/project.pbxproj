@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAAB37132369BD2000B8B6D8 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB37122369BD2000B8B6D8 /* ContactView.swift */; };
+		AAAB3717236E042500B8B6D8 /* MentalHealth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB3716236E042500B8B6D8 /* MentalHealth.swift */; };
+		AAAB371B236E109400B8B6D8 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB371A236E109400B8B6D8 /* Identity.swift */; };
+		AAAB371D236E11F600B8B6D8 /* SubstanceUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB371C236E11F600B8B6D8 /* SubstanceUse.swift */; };
+		AAAB371F236E123800B8B6D8 /* TimeManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB371E236E123800B8B6D8 /* TimeManagement.swift */; };
+		AAAB3721236E125300B8B6D8 /* SexualWellness.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB3720236E125300B8B6D8 /* SexualWellness.swift */; };
+		AAAB3725236E127A00B8B6D8 /* MTHC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB3724236E127A00B8B6D8 /* MTHC.swift */; };
 		AABCBD55235F50DB00B759F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD54235F50DB00B759F3 /* AppDelegate.swift */; };
 		AABCBD57235F50DB00B759F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD56235F50DB00B759F3 /* SceneDelegate.swift */; };
 		AABCBD59235F50DB00B759F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD58235F50DB00B759F3 /* ContentView.swift */; };
@@ -15,7 +22,6 @@
 		AABCBD61235F50E300B759F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AABCBD5F235F50E300B759F3 /* LaunchScreen.storyboard */; };
 		AABCBD6C235F50E300B759F3 /* ThriveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD6B235F50E300B759F3 /* ThriveTests.swift */; };
 		AABCBD77235F50E300B759F3 /* ThriveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD76235F50E300B759F3 /* ThriveUITests.swift */; };
-		AABCBD852360FD5200B759F3 /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = AABCBD842360FD5200B759F3 /* Home.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AAAB37122369BD2000B8B6D8 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		AAAB3716236E042500B8B6D8 /* MentalHealth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealth.swift; sourceTree = "<group>"; };
+		AAAB371A236E109400B8B6D8 /* Identity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
+		AAAB371C236E11F600B8B6D8 /* SubstanceUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubstanceUse.swift; sourceTree = "<group>"; };
+		AAAB371E236E123800B8B6D8 /* TimeManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManagement.swift; sourceTree = "<group>"; };
+		AAAB3720236E125300B8B6D8 /* SexualWellness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexualWellness.swift; sourceTree = "<group>"; };
+		AAAB3724236E127A00B8B6D8 /* MTHC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTHC.swift; sourceTree = "<group>"; };
 		AABCBD51235F50DB00B759F3 /* Thrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AABCBD54235F50DB00B759F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AABCBD56235F50DB00B759F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +63,6 @@
 		AABCBD72235F50E300B759F3 /* ThriveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThriveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AABCBD76235F50E300B759F3 /* ThriveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThriveUITests.swift; sourceTree = "<group>"; };
 		AABCBD78235F50E300B759F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AABCBD842360FD5200B759F3 /* Home.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Home.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +116,17 @@
 				AABCBD54235F50DB00B759F3 /* AppDelegate.swift */,
 				AABCBD56235F50DB00B759F3 /* SceneDelegate.swift */,
 				AABCBD58235F50DB00B759F3 /* ContentView.swift */,
+				AAAB3716236E042500B8B6D8 /* MentalHealth.swift */,
+				AAAB371C236E11F600B8B6D8 /* SubstanceUse.swift */,
+				AAAB3724236E127A00B8B6D8 /* MTHC.swift */,
+				AAAB371E236E123800B8B6D8 /* TimeManagement.swift */,
+				AAAB3720236E125300B8B6D8 /* SexualWellness.swift */,
+				AAAB371A236E109400B8B6D8 /* Identity.swift */,
+				AAAB37122369BD2000B8B6D8 /* ContactView.swift */,
 				AABCBD5A235F50E300B759F3 /* Assets.xcassets */,
 				AABCBD5F235F50E300B759F3 /* LaunchScreen.storyboard */,
 				AABCBD62235F50E300B759F3 /* Info.plist */,
 				AABCBD5C235F50E300B759F3 /* Preview Content */,
-				AABCBD842360FD5200B759F3 /* Home.xib */,
 			);
 			path = Thrive;
 			sourceTree = "<group>";
@@ -245,7 +263,6 @@
 			files = (
 				AABCBD61235F50E300B759F3 /* LaunchScreen.storyboard in Resources */,
 				AABCBD5E235F50E300B759F3 /* Preview Assets.xcassets in Resources */,
-				AABCBD852360FD5200B759F3 /* Home.xib in Resources */,
 				AABCBD5B235F50E300B759F3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,9 +288,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAAB371F236E123800B8B6D8 /* TimeManagement.swift in Sources */,
 				AABCBD55235F50DB00B759F3 /* AppDelegate.swift in Sources */,
 				AABCBD57235F50DB00B759F3 /* SceneDelegate.swift in Sources */,
 				AABCBD59235F50DB00B759F3 /* ContentView.swift in Sources */,
+				AAAB371D236E11F600B8B6D8 /* SubstanceUse.swift in Sources */,
+				AAAB3717236E042500B8B6D8 /* MentalHealth.swift in Sources */,
+				AAAB3725236E127A00B8B6D8 /* MTHC.swift in Sources */,
+				AAAB37132369BD2000B8B6D8 /* ContactView.swift in Sources */,
+				AAAB371B236E109400B8B6D8 /* Identity.swift in Sources */,
+				AAAB3721236E125300B8B6D8 /* SexualWellness.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
