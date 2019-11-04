@@ -34,15 +34,20 @@ struct ContentView: View {
 				}
 				HStack (spacing: 50){
 					NavigationLink(destination:SubstanceUse()){
-					Text("Substance Use")
+						Text("Substance Use")
 					}
-					
-					
-				}
+					NavigationLink(destination:SexualWellness()){
+						Text("Sexual Wellness")
+					}
+					}
 				HStack (spacing: 50){
-					Text("Meet the Health Center")
-					Text("Time Management")
+					NavigationLink(destination:MTHC()){
+						Text("Meet the Health Center")
 					}
+					NavigationLink(destination:TimeManagement()){
+						Text("Time Management")
+					}
+				}
 				}
 			}
 		}
