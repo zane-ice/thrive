@@ -9,7 +9,20 @@ import SwiftUI
 
 struct ContactView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List {
+                HStack {
+                
+                Image("thurber")
+                    .resizable()
+                    .frame(width:60,height:60)
+                    Button(action:  {}) {
+                        Text("Dr. Thurber")
+                    }
+                }
+                
+            }.navigationBarTitle(Text("People to Email:"))
+        }
     }
 }
 

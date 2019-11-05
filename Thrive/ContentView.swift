@@ -23,7 +23,7 @@ struct ContentView: View {
     var body: some View {
 		
 		NavigationView(){
-			VStack (spacing: 50) {
+			VStack (alignment: .leading, spacing: 50) {
 				HStack(spacing: 50) {
 					NavigationLink(destination:MentalHealth()){
 						Text("Mental Health")
