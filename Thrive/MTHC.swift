@@ -15,8 +15,45 @@ struct MTHC: View {
                 .font(.title)
                 .fontWeight(.bold)
 
-             ScrollView {
-                Button(action: {}) {
+            NavigationView() {
+                ScrollView(){
+                    NavigationLink(destination:Text("")) {
+                    VStack {
+                        Image("thurber").resizable()
+                        .frame(width:380, height: 380)
+                        Text("Dr. Thurber")
+                            .font(.headline)
+                        .foregroundColor(Color.black)
+                        Text("Counselor")
+                            .fontWeight(.thin)
+                        .foregroundColor(Color.black)
+                    }
+                }
+                NavigationLink(destination:Text("")) {
+                        VStack {
+                            Image("thurber").resizable()
+                            .frame(width:380, height: 380)
+                            Text("Dr. Thurber")
+                                .font(.headline)
+                            .foregroundColor(Color.black)
+                            Text("Counselor")
+                                .fontWeight(.thin)
+                            .foregroundColor(Color.black)
+                        }
+                    }
+                NavigationLink(destination:Text("")) {
+                    VStack {
+                        Image("thurber").resizable()
+                        .frame(width:380, height: 380)
+                        Text("Dr. Thurber")
+                            .font(.headline)
+                        .foregroundColor(Color.black)
+                        Text("Counselor")
+                            .fontWeight(.thin)
+                        .foregroundColor(Color.black)
+                    }
+                }
+                NavigationLink(destination:Text("")) {
                     VStack {
                         Image("thurber").resizable()
                         .frame(width:380, height: 380)
@@ -30,7 +67,7 @@ struct MTHC: View {
                 }
                 
                 
-                }
+                }}
 
             }
     }
