@@ -13,6 +13,7 @@ struct MentalHealth: View {
         VStack () {
             Text("Mental Health")
                 .font(.title)
+            
             NavigationView(){
                 ScrollView(){
                 VStack (alignment: .leading, spacing: 50) {
