@@ -14,9 +14,25 @@ struct MentalHealth: View {
             Text("Mental Health")
                 .font(.title)
             NavigationView(){
-                NavigationLink(destination: Text("info")){
-                    Text("Depression")
+                ScrollView(){
+                VStack (alignment: .leading, spacing: 50) {
+                    NavigationLink(destination: Text("Information")){
+                        Text("Mental Health Disorders")
+                    }
+                    NavigationLink(destination: Text("ASAP Program")){
+                        Text("Helping a Friend")
+                    }
+                    NavigationLink(destination: Text("Blah1")){
+                        Text("On-Campus Support")
+                    }
+                    NavigationLink(destination: Text("Blah2")){
+                        Text("Suicide/Self-Harm Prevention")
+                    }
+                    NavigationLink(destination: Text("Blah3")){
+                        Text("Exonian Voices")
+                    }
                 }
+            }
             }
         }
     }
