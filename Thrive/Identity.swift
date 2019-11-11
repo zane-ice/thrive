@@ -39,12 +39,26 @@ struct Identity: View {
         VStack () {
             
             
-        Text("13 Skills for Culturally Competent Communication")
+        Text("Identity")
             .font(.title)
             .fontWeight(.bold)
+            
+            NavigationView{
+                NavigationLink(destination:
 
-            
-            
+            List(comData) { communication in
+                HStack {
+                    VStack {
+                        Text(communication.short)
+                            .fontWeight(.bold)
+                        Text(communication.long)
+                    }
+                }
+            }
+                ) {
+                    Text("13 Skills for Culturally Competent Communication")
+                }
+            }
             
        /*
         NavigationView() {
