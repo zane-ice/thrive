@@ -22,6 +22,10 @@ struct ContentView: View {
 	
     var body: some View {
 		
+		VStack{
+			Text("Thrive")
+				.font(.largeTitle)
+				.fontWeight(.black)
 		NavigationView(){
 			VStack (alignment: .leading, spacing: 50) {
 				HStack(spacing: 50) {
@@ -42,42 +46,28 @@ struct ContentView: View {
 					}
 				HStack (spacing: 50){
 					NavigationLink(destination:MTHC()){
+						VStack{
 						Text("Meet the Health Center")
+						}
 					}
 					NavigationLink(destination:TimeManagement()){
+						VStack{
+						Image(systemName: "clock")
 						Text("Time Management")
+						}
 					}
 				}
 				}
 			}
+		TabView(selection: /*@START_MENU_TOKEN@*/ /*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
+			Text("").tabItem { Image(systemName:"house") }.tag(1)
+			Text("Tab Content 2").tabItem { Image(systemName: "phone") }.tag(2)
 		}
+		}//end of vstack
 		
-        /*TabView(selection: $selection){
-			VStack{
-            Text("Thrive").font(.title).fontWeight(.black)
-			}
-			
-			.tabItem {
-
-			
-			VStack {
-				Image(systemName: "house.fill")
-				Text("Home").tag(0)
-                    }
-                }
-			
-			Text("Contact")
-			.font(.title)
-			.tabItem {
-			VStack {
-				Image(systemName: "phone.circle.fill")
-				Text("Contact").tag(1)
-                    }
-                }
-        } */
-
-    
-
+		
+		
+		}
 
 
 
