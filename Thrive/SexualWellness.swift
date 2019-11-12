@@ -10,7 +10,12 @@ import SwiftUI
 
 struct SexualWellness: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        VStack () {
+            Text("Sexually Responsible Behavior").fontWeight(.bold)
+            Text("Credit to ETR Associates and Marcia Quackenbush, MS, MFT, CHES.").italic()
+            Text("Healthy Relationships").fontWeight(.bold)
+            Text("Sexual Abuse").fontWeight(.bold)
+            Text("Resources for PEA Students").fontWeight(.bold)
     }
 }
 
@@ -18,4 +23,5 @@ struct SexualWellness_Previews: PreviewProvider {
     static var previews: some View {
         SexualWellness()
     }
+}
 }
