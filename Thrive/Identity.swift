@@ -45,10 +45,13 @@ struct Identity: View {
             
             NavigationView{
                 NavigationLink(destination:
-
+                    
+                    
             List(comData) { communication in
+
+
                 HStack {
-                    VStack {
+                        VStack {
                         Text(communication.short)
                             .fontWeight(.bold)
                         Text(communication.long)
