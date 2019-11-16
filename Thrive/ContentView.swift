@@ -45,9 +45,9 @@ struct ContentView: View {
 					}
 					}
 				HStack (spacing: 50){
-					NavigationLink(destination:MTHC()){
+					NavigationLink(destination:Wellness()){
 						VStack{
-						Text("Meet the Health Center")
+						Text("Wellness")
 						}
 					}
 					NavigationLink(destination:TimeManagement()){
@@ -57,12 +57,25 @@ struct ContentView: View {
 						}
 					}
 				}
+				HStack (spacing: 50){
+					NavigationLink(destination:MTHC()){
+						VStack{
+						Text("Meet the Health Center")
+						}
+					}
+					NavigationLink(destination:ContactView()){
+						VStack{
+						Text("Contact")
+						}
+					}
+
+				}
 				}
 			}
-		TabView(selection: /*@START_MENU_TOKEN@*/ /*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
-			Text("").tabItem { Image(systemName:"house") }.tag(1)
-			Text("Tab Content 2").tabItem { Image(systemName: "phone") }.tag(2)
-		}
+//		TabView(selection: /*@START_MENU_TOKEN@*/ /*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
+//			Text("").tabItem { Image(systemName:"house") }.tag(1)
+//			Text("Tab Content 2").tabItem { Image(systemName: "phone") }.tag(2)
+//		}
 		}//end of vstack
 		
 		

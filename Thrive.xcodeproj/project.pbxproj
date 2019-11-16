@@ -22,6 +22,7 @@
 		AABCBD61235F50E300B759F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AABCBD5F235F50E300B759F3 /* LaunchScreen.storyboard */; };
 		AABCBD6C235F50E300B759F3 /* ThriveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD6B235F50E300B759F3 /* ThriveTests.swift */; };
 		AABCBD77235F50E300B759F3 /* ThriveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD76235F50E300B759F3 /* ThriveUITests.swift */; };
+		E67B9D42238093880038B6C7 /* Wellness.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67B9D41238093880038B6C7 /* Wellness.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		AABCBD72235F50E300B759F3 /* ThriveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThriveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AABCBD76235F50E300B759F3 /* ThriveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThriveUITests.swift; sourceTree = "<group>"; };
 		AABCBD78235F50E300B759F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E67B9D41238093880038B6C7 /* Wellness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wellness.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				AAAB3724236E127A00B8B6D8 /* MTHC.swift */,
 				AAAB371E236E123800B8B6D8 /* TimeManagement.swift */,
 				AAAB3720236E125300B8B6D8 /* SexualWellness.swift */,
+				E67B9D41238093880038B6C7 /* Wellness.swift */,
 				AAAB371A236E109400B8B6D8 /* Identity.swift */,
 				AAAB37122369BD2000B8B6D8 /* ContactView.swift */,
 				AABCBD5A235F50E300B759F3 /* Assets.xcassets */,
@@ -297,6 +300,7 @@
 				AAAB3725236E127A00B8B6D8 /* MTHC.swift in Sources */,
 				AAAB37132369BD2000B8B6D8 /* ContactView.swift in Sources */,
 				AAAB371B236E109400B8B6D8 /* Identity.swift in Sources */,
+				E67B9D42238093880038B6C7 /* Wellness.swift in Sources */,
 				AAAB3721236E125300B8B6D8 /* SexualWellness.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

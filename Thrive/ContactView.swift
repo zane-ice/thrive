@@ -1,7 +1,6 @@
 //
 //  ContactView.swift
 //  Thrive
-// ANJALI
 
 //
 
