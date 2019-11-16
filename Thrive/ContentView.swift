@@ -26,6 +26,7 @@ struct ContentView: View {
 			Text("Thrive")
 				.font(.largeTitle)
 				.fontWeight(.black)
+
 		NavigationView(){
 			VStack (alignment: .leading, spacing: 50) {
 				HStack(spacing: 50) {
