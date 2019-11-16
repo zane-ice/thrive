@@ -17,6 +17,13 @@ struct communication: Identifiable {
     
 }
 
+struct groupResources: Identifiable {
+    
+    var id = UUID()
+    var club: String
+    var clubInfo: String
+}
+
 struct Identity: View {
     
     let comData: [communication] =
@@ -34,6 +41,15 @@ struct Identity: View {
      communication(short:"Lean Into Discomfort", long:"Lean into discomfort. Give space and grace, and be willing to have the tough, candid and caring conversations"),
      communication(short:"Get to Know More", long:"Get to know more than the iceberg/metaphorical 10% of identity you see by increasing your knowledge, skills, and abilities in the areas of diversity, countering oppression and building inclusion")]
     
+    let clubData: [groupResources] =
+    
+        [groupResources(club: "Queer Umbrella Group", clubInfo: "Ms. Lembo, jlembo@exeter.edu or Mr. Myers, amyers@exeter.edu" ),
+         groupResources(club: "Lesbian/Queer Women Affinity Group", clubInfo: "Ms. Lembo, jlembo@exeter.edu or Rev. Heidi, hheath1@exeter.edu" ),
+         groupResources(club: "Gay Male Affinity Group", clubInfo: "Ms. Lembo: jlembo@exeter.edu (temporarily)" ),
+         groupResources(club: "Bi-Sexual / Pansexual Affinity Group", clubInfo: "Ms. Tipp: ilonatipp@gmail.com" ),
+         groupResources(club: "Transgender Affinity Group", clubInfo: "Mr. Myers: amyers@exeter.edu or Dr. Heath: ecarringtonheath@mac.com" ),
+         groupResources(club: "Queer Kids of Color", clubInfo: "Mr. Walker: jwalker2@exeter.edu" )]
+    
     
     var body: some View {
         VStack () {
@@ -43,10 +59,15 @@ struct Identity: View {
             .font(.title)
             .fontWeight(.bold)
             
-            NavigationView{
+            
                 NavigationLink(destination:
                     
-                    
+                    VStack {
+                        
+                        Text("13 Skills for Culturally Competent Communication")
+                            .font(.title)
+                            .fontWeight(.bold)
+                        
             List(comData) { communication in
 
 
@@ -58,67 +79,42 @@ struct Identity: View {
                     }
                 }
             }
+                        Text("Credits").italic()
+            }
                 ) {
                     Text("13 Skills for Culturally Competent Communication")
                 }
-            }
+            //End of 13 Skills
             
-       /*
-        NavigationView() {
-            ScrollView(){
-                
-                NavigationLink(destination:Text("Greet Others genuinely and make an effort to pronounce their name accurately")) {
-                VStack {
-                    Text("Greet Others")
-                        .font(.headline)
-                    .foregroundColor(Color.black)
+            NavigationLink(destination:
                     
-                }
-            }
-            NavigationLink(destination:Text("Listen to Understand vs. listen to respond")) {
                     VStack {
                         
-                        Text("Listen to Understand")
-                            .font(.headline)
-                        .foregroundColor(Color.black)
+                        Text("LGBTQ+ Affinity Groups")
+                            .font(.title)
                         
-                    }
-                }
-            NavigationLink(destination:Text("Accept the speaker's viewpoint as true for the speaker (especially in the moment)")) {
-                VStack {
-                    
-                    Text("Accept the Speaker's Viewpoint")
-                        .font(.headline)
-                    .foregroundColor(Color.black)
-                    
-                }
-            }
-            NavigationLink(destination:Text("Use 'I' statements")) {
-                VStack {
-                    
-                    Text("Use 'I'")
-                        .font(.headline)
-                    .foregroundColor(Color.black)
-                    
-                }
-            }
-                NavigationLink(destination:Text("Consistently operate in a learner mindset seeking to gain and reflect on a 360º view")) {
-                    VStack {
-                        
-                        Text("Learner Mindset")
-                            .font(.headline)
-                        .foregroundColor(Color.black)
-                        
-                    }
-                }
-                
+            List(clubData) { groupResources in
 
-            
-            
+                
+                HStack {
+                        VStack {
+                        Text(groupResources.club)
+                            .fontWeight(.bold)
+                        Text(groupResources.clubInfo)
+                    }
+                }
             }
+                        Text("Credits").italic()
+                }
+                
+                
+                
+                ) {
+                    Text("LGBTQ+ Affinity Groups")
+                }
             
-        } */
-            //end of NavView
+            
+       
 
         }
     }
