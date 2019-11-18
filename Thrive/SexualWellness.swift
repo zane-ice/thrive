@@ -34,7 +34,7 @@ extension SexualWellness{
     struct abuse: View{
         var body: some View{
             ScrollView{
-                Text("Dr. Marina Vijayakanthan").font(.body).fontWeight(.light).padding(15)
+                Text("You don’t have to be in a crisis to call. You have the right to feel safe, be treated with respect, say no to sex, spend time with friends, and feel good about yourself. \n \n What is abuse? \n An unhealthy relationship has an imbalance in which one person tries to gain power and control over the other through threats, emotional/verbal abuse, or physical or sexual violence. \n \n How to help a friend who is being abused \n The most important way to help a friend is through the messages you give them. For example, offer to go with your friend to talk to a trusted adult. Send messages of I believe you, it’s not your fault, how can i help you feel safe, your reactions are normal reactions to a horrible experience, help me understand how you feel, you’re not alone. \n \n 1 in 4 teens in a relationship have been called names, put down, or harassed in a relationship. \n 1 in 3 teens will experience abuse in a relationship.").font(.body).fontWeight(.light).padding(15)
             }
         }
     }
@@ -44,7 +44,8 @@ extension SexualWellness{
     struct resources: View{
         var body: some View{
             ScrollView{
-                Text("Dr. Marina Vijayakanthan").font(.body).fontWeight(.light).padding(15)
+                Text("On-Campus Support \n \u{2022} 24-hour on-call Counselor: 603-777-3420 \n \u{2022} 24-hour on-call Dean’s Office and Campus Security: 603-777-4444 \n \u{2022} Director of Student Safety and Wellbeing: Tina Sciocchetti, Esq. 518-275-1664, tsciocchetti@exeter.edu \n \u{2022} PEA Counselors \n \t \u{2022} Jeanie Stern, LICSW, 603-777-3527, jstern@exeter.edu \n \t \u{2022} Chris Thurber, Ph.D., 603-777-3528, cthurber@exeter.edu  \n \t \u{2022} Connie Morse, LICSW, 603-777-3431, cmorse@exeter.edu \n \t \u{2022} Szu-Hui Lee, Ph.D., 603-777-3532, slee@exeter.edu  \n \u{2022} PEA Contracted Psychiatrist: Emad Milad, M.D., PEA: 603-777-3420 (Wednesdays), Hampstead Hospital: 603-436-0600, emilad@exeter.edu \n \u{2022} Ethics Point: PEA Confidential Misconduct Reporting Site: http://bit.ly/PEAreport").font(.body).fontWeight(.light).padding(15)
+                Text("Off-Campus Support \n \u{2022} Community Counselors \n \t \u{2022} Andrew Nathan, Psy D., 603-772-3462, 14 Front Street Exeter NH \n \t \u{2022} Beth Salvi-Hudgins, LICSW, 603-773-5899  \n \t \u{2022} Jane Woodard, LICSW, 603-773-5899, 2 Franklin Street Exeter NH \n \t \u{2022} Lynn Perrin-Wilhousky, LICSW, 603-778-7433, Exeter Counseling Center \n \u{2022} HAVEN \n \t \u{2022} Violence Prevention and Sexual Assault Support Services: http://havennh.org/ \n \t \u{2022} 24-hour confidential hotline: 603-994-7263\n \t \u{2022} Advocacy \n \t \u{2022} Counseling and support group referrals \n \u{2022} Exeter Police Department: 603-772-1212, http://exeternh.gov/police").font(.body).fontWeight(.light).padding(15)
             }
         }
     }
@@ -53,9 +54,9 @@ extension SexualWellness{
 struct SexualWellness: View {
    var body: some View {
     VStack {
-            Text("Sexual Wellness")
-                .font(.title)
-                .fontWeight(.bold)
+//            Text("Sexual Wellness")
+//                .font(.title)
+//                .fontWeight(.bold)
 
                 ScrollView {
                     NavigationLink(destination: behavior()){
@@ -70,7 +71,7 @@ struct SexualWellness: View {
                     NavigationLink(destination: resources()){
                         Text("Resources for PEA Students")
                     }
-                }
+                }.navigationBarTitle("Sexual Wellness", displayMode: .inline)
             
             
             }
