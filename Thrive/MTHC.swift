@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+//each of these structs represents one counselor. manages visual part of bio
 extension MTHC{
     struct CT: View{
         var body: some View{
@@ -126,6 +127,8 @@ extension MTHC{
         }
     }
 }
+
+//each of these structs represents the text of the bio for each counselor
 extension MTHC{
     struct CTtext: View{
         var body: some View{
@@ -191,14 +194,16 @@ extension MTHC{
 }
 
 
-
+//actual view of page
 struct MTHC: View {
    var body: some View {
     VStack {
+            //title
             Text("Meet the Health Center")
                 .font(.title)
                 .fontWeight(.bold)
-
+        
+                //initializes each counselor's image/title and uses it as NavigationLink to the text of the bio
                 ScrollView {
                     NavigationLink(destination:SLtext()) {
                         SL()

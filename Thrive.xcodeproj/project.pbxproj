@@ -14,6 +14,8 @@
 		AAAB371F236E123800B8B6D8 /* TimeManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB371E236E123800B8B6D8 /* TimeManagement.swift */; };
 		AAAB3721236E125300B8B6D8 /* SexualWellness.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB3720236E125300B8B6D8 /* SexualWellness.swift */; };
 		AAAB3725236E127A00B8B6D8 /* MTHC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB3724236E127A00B8B6D8 /* MTHC.swift */; };
+		AAB6C13A2382454C000DB073 /* menuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB6C1392382454C000DB073 /* menuButton.swift */; };
+		AAB6C13C238257A7000DB073 /* lionTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB6C13B238257A7000DB073 /* lionTip.swift */; };
 		AABCBD55235F50DB00B759F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD54235F50DB00B759F3 /* AppDelegate.swift */; };
 		AABCBD57235F50DB00B759F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD56235F50DB00B759F3 /* SceneDelegate.swift */; };
 		AABCBD59235F50DB00B759F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD58235F50DB00B759F3 /* ContentView.swift */; };
@@ -50,6 +52,8 @@
 		AAAB371E236E123800B8B6D8 /* TimeManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManagement.swift; sourceTree = "<group>"; };
 		AAAB3720236E125300B8B6D8 /* SexualWellness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexualWellness.swift; sourceTree = "<group>"; };
 		AAAB3724236E127A00B8B6D8 /* MTHC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTHC.swift; sourceTree = "<group>"; };
+		AAB6C1392382454C000DB073 /* menuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuButton.swift; sourceTree = "<group>"; };
+		AAB6C13B238257A7000DB073 /* lionTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lionTip.swift; sourceTree = "<group>"; };
 		AABCBD51235F50DB00B759F3 /* Thrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AABCBD54235F50DB00B759F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AABCBD56235F50DB00B759F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				AABCBD54235F50DB00B759F3 /* AppDelegate.swift */,
 				AABCBD56235F50DB00B759F3 /* SceneDelegate.swift */,
 				AABCBD58235F50DB00B759F3 /* ContentView.swift */,
+				AAB6C13B238257A7000DB073 /* lionTip.swift */,
+				AAB6C1392382454C000DB073 /* menuButton.swift */,
 				AAAB3716236E042500B8B6D8 /* MentalHealth.swift */,
 				AAAB371C236E11F600B8B6D8 /* SubstanceUse.swift */,
 				AAAB3724236E127A00B8B6D8 /* MTHC.swift */,
@@ -291,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAB6C13A2382454C000DB073 /* menuButton.swift in Sources */,
 				AAAB371F236E123800B8B6D8 /* TimeManagement.swift in Sources */,
 				AABCBD55235F50DB00B759F3 /* AppDelegate.swift in Sources */,
 				AABCBD57235F50DB00B759F3 /* SceneDelegate.swift in Sources */,
@@ -298,6 +305,7 @@
 				AAAB371D236E11F600B8B6D8 /* SubstanceUse.swift in Sources */,
 				AAAB3717236E042500B8B6D8 /* MentalHealth.swift in Sources */,
 				AAAB3725236E127A00B8B6D8 /* MTHC.swift in Sources */,
+				AAB6C13C238257A7000DB073 /* lionTip.swift in Sources */,
 				AAAB37132369BD2000B8B6D8 /* ContactView.swift in Sources */,
 				AAAB371B236E109400B8B6D8 /* Identity.swift in Sources */,
 				E67B9D42238093880038B6C7 /* Wellness.swift in Sources */,

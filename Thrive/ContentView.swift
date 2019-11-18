@@ -1,18 +1,3 @@
-//
-
-//  ContentView.swift
-
-//  Thrive
-
-// // test
-
-//  Created by Zane Ice on 10/22/19.
-
-//  Copyright © 2019 Thrive. All rights reserved.
-
-// Zane
-
-
 import SwiftUI
 
 
@@ -20,68 +5,57 @@ struct ContentView: View {
 
     @State private var selection = 0
 	
+	
     var body: some View {
-		
-		VStack{
-			Text("Thrive")
-				.font(.largeTitle)
-				.fontWeight(.black)
-
-		NavigationView(){
-			VStack (alignment: .leading, spacing: 50) {
-				HStack(spacing: 50) {
-					NavigationLink(destination:MentalHealth()){
-						Text("Mental Health")
-					}
-					NavigationLink(destination:Identity()){
-						Text("Identity")
-					}
-				}
-				HStack (spacing: 50){
-					NavigationLink(destination:SubstanceUse()){
-						Text("Substance Use")
-					}
-					NavigationLink(destination:SexualWellness()){
-						Text("Sexual Wellness")
-					}
-					}
-				HStack (spacing: 50){
-					NavigationLink(destination:Wellness()){
-						VStack{
-						Text("Wellness")
+		//NavigationView sets up the navigation hierarchy and allows us to use links to other pages
+		NavigationView{
+			ZStack{
+			//background color
+			Color(red: 0.7, green: 0, blue: 0)
+				VStack(spacing: 20){
+				Text("Thrive")
+					.font(.largeTitle)
+					.fontWeight(.black)
+					.offset(y: 15)
+				//inserts lion tip
+				lionTip()
+					//list of buttons
+					ScrollView() {
+					VStack(spacing:20){
+						NavigationLink(destination: MentalHealth()){
+							menuButton(text: "Mental Health", imageurl: "smiley.fill")
+						}
+						NavigationLink(destination: SexualWellness()){
+							menuButton(text: "Sexual Wellness", imageurl: "heart.fill")
+						}
+						NavigationLink(destination: Identity()){
+							menuButton(text: "Identity", imageurl: "person.fill")
+						}
+						NavigationLink(destination: TimeManagement()){
+							menuButton(text: "Time Management", imageurl: "clock.fill")
+						}
+						NavigationLink(destination: SubstanceUse()){
+							menuButton(text: "Substance Use", imageurl: "smoke.fill")
+						}
+						NavigationLink(destination: Wellness()){
+							menuButton(text: "Wellness", imageurl: "sun.max.fill")
+						}
+						NavigationLink(destination: MTHC()){
+							menuButton(text: "Meet the Health Center", imageurl: "person.2.fill")
+						}
+						NavigationLink(destination: ContactView()){
+							menuButton(text: "Contact", imageurl: "number")
+						}
 						}
 					}
-					NavigationLink(destination:TimeManagement()){
-						VStack{
-						Image(systemName: "clock")
-						Text("Time Management")
-						}
-					}
 				}
-				HStack (spacing: 50){
-					NavigationLink(destination:MTHC()){
-						VStack{
-						Text("Meet the Health Center")
-						}
-					}
-					NavigationLink(destination:ContactView()){
-						VStack{
-						Text("Contact")
-						}
-					}
-
-				}
-				}
-			}
-//		TabView(selection: /*@START_MENU_TOKEN@*/ /*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
-//			Text("").tabItem { Image(systemName:"house") }.tag(1)
-//			Text("Tab Content 2").tabItem { Image(systemName: "phone") }.tag(2)
-//		}
-		}//end of vstack
-		
-		
-		
+			}.edgesIgnoringSafeArea(.all)
+			//gets rid of navigation bar
+			.navigationBarTitle("")
+			.navigationBarHidden(true)
 		}
+	
+}
 
 
 
