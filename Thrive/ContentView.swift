@@ -19,7 +19,7 @@ struct ContentView: View {
 					.offset(y: 15)
 				//inserts lion tip
 				lionTip()
-					//list of buttons
+					//list of buttons (navigationLinks using menuButton struct)
 					ScrollView() {
 					VStack(spacing:20){
 						NavigationLink(destination: MentalHealth()){

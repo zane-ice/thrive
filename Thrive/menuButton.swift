@@ -12,15 +12,19 @@ struct menuButton: View {
     var text: String
     var imageurl: String
     var body: some View{
+    //stacks rounded rectangle, text and image
     ZStack {
+        //rounded rectangle
         RoundedRectangle(cornerRadius: 25, style: .continuous)
             .fill(Color.white)
             .shadow(color: Color.gray, radius: 7, x: 2, y: 5)
             .frame(width: 320, height: 75)
+        //text of the button
         Text(text)
                 .font(.headline)
                 .fontWeight(.bold)
             .foregroundColor(Color.black)
+        //system icon
         Image(systemName: imageurl)
                 .foregroundColor(Color.gray)
             .offset(x: 135)
