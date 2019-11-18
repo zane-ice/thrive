@@ -7,8 +7,6 @@ struct ContentView: View {
 	
 	
     var body: some View {
-		//NavigationView sets up the navigation hierarchy and allows us to use links to other pages
-		NavigationView{
 			ZStack{
 			//background color
 			Color(red: 0.7, green: 0, blue: 0)
@@ -19,6 +17,10 @@ struct ContentView: View {
 					.offset(y: 15)
 				//inserts lion tip
 				lionTip()
+				//NavigationView sets up the navigation hierarchy and allows us to use links to other pages
+				NavigationView{
+					ZStack{
+					Color(red: 0.7, green: 0, blue: 0)
 					//list of buttons
 					ScrollView() {
 					VStack(spacing:20){
@@ -48,12 +50,15 @@ struct ContentView: View {
 						}
 						}
 					}
+					//gets rid of navigation bar
+					.navigationBarTitle("")
+					.navigationBarHidden(true)
+					}
 				}
+					
+					}
 			}.edgesIgnoringSafeArea(.all)
-			//gets rid of navigation bar
-			.navigationBarTitle("")
-			.navigationBarHidden(true)
-		}
+			
 	
 }
 
