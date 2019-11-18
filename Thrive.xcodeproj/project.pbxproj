@@ -16,6 +16,8 @@
 		AAAB3725236E127A00B8B6D8 /* MTHC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB3724236E127A00B8B6D8 /* MTHC.swift */; };
 		AAB6C13A2382454C000DB073 /* menuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB6C1392382454C000DB073 /* menuButton.swift */; };
 		AAB6C13C238257A7000DB073 /* lionTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB6C13B238257A7000DB073 /* lionTip.swift */; };
+		AAB6C13E23825E50000DB073 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB6C13D23825E50000DB073 /* Contact.swift */; };
+		AAB6C1402382ED28000DB073 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB6C13F2382ED28000DB073 /* Profile.swift */; };
 		AABCBD55235F50DB00B759F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD54235F50DB00B759F3 /* AppDelegate.swift */; };
 		AABCBD57235F50DB00B759F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD56235F50DB00B759F3 /* SceneDelegate.swift */; };
 		AABCBD59235F50DB00B759F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD58235F50DB00B759F3 /* ContentView.swift */; };
@@ -54,6 +56,8 @@
 		AAAB3724236E127A00B8B6D8 /* MTHC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTHC.swift; sourceTree = "<group>"; };
 		AAB6C1392382454C000DB073 /* menuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuButton.swift; sourceTree = "<group>"; };
 		AAB6C13B238257A7000DB073 /* lionTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lionTip.swift; sourceTree = "<group>"; };
+		AAB6C13D23825E50000DB073 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		AAB6C13F2382ED28000DB073 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		AABCBD51235F50DB00B759F3 /* Thrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AABCBD54235F50DB00B759F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AABCBD56235F50DB00B759F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,11 +131,13 @@
 				AAAB3716236E042500B8B6D8 /* MentalHealth.swift */,
 				AAAB371C236E11F600B8B6D8 /* SubstanceUse.swift */,
 				AAAB3724236E127A00B8B6D8 /* MTHC.swift */,
+				AAB6C13F2382ED28000DB073 /* Profile.swift */,
 				AAAB371E236E123800B8B6D8 /* TimeManagement.swift */,
 				AAAB3720236E125300B8B6D8 /* SexualWellness.swift */,
 				E67B9D41238093880038B6C7 /* Wellness.swift */,
 				AAAB371A236E109400B8B6D8 /* Identity.swift */,
 				AAAB37122369BD2000B8B6D8 /* ContactView.swift */,
+				AAB6C13D23825E50000DB073 /* Contact.swift */,
 				AABCBD5A235F50E300B759F3 /* Assets.xcassets */,
 				AABCBD5F235F50E300B759F3 /* LaunchScreen.storyboard */,
 				AABCBD62235F50E300B759F3 /* Info.plist */,
@@ -298,11 +304,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAB6C13A2382454C000DB073 /* menuButton.swift in Sources */,
+				AAB6C1402382ED28000DB073 /* Profile.swift in Sources */,
 				AAAB371F236E123800B8B6D8 /* TimeManagement.swift in Sources */,
 				AABCBD55235F50DB00B759F3 /* AppDelegate.swift in Sources */,
 				AABCBD57235F50DB00B759F3 /* SceneDelegate.swift in Sources */,
 				AABCBD59235F50DB00B759F3 /* ContentView.swift in Sources */,
 				AAAB371D236E11F600B8B6D8 /* SubstanceUse.swift in Sources */,
+				AAB6C13E23825E50000DB073 /* Contact.swift in Sources */,
 				AAAB3717236E042500B8B6D8 /* MentalHealth.swift in Sources */,
 				AAAB3725236E127A00B8B6D8 /* MTHC.swift in Sources */,
 				AAB6C13C238257A7000DB073 /* lionTip.swift in Sources */,

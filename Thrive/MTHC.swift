@@ -8,126 +8,6 @@
 
 import SwiftUI
 
-//each of these structs represents one counselor. manages visual part of bio
-extension MTHC{
-    struct CT: View{
-        var body: some View{
-            VStack {
-                Image("thurber")
-                .frame(width:380, height: 380)
-                Text("Chris A. Thurber")
-                    .font(.headline)
-                .foregroundColor(Color.black)
-                Text("Associate Director of Counseling and Psychological Services")
-                    .fontWeight(.thin)
-                    .foregroundColor(Color.black)
-                    .multilineTextAlignment(.center)
-            }
-        }
-    }
-}
-extension MTHC{
-    struct SL: View{
-        var body: some View{
-             VStack {
-                Image("sl").resizable()
-               .frame(width:380, height: 380)
-               Text("Szu-Hui Lee")
-                   .font(.headline)
-               .foregroundColor(Color.black)
-               Text("Director of Counseling and Psychological Services")
-                   .fontWeight(.thin)
-               .foregroundColor(Color.black)
-               .multilineTextAlignment(.center)
-           }
-        }
-    }
-}
-extension MTHC{
-    struct MT: View{
-        var body: some View{
-           VStack {
-                Image("mt").resizable()
-                .frame(width:380, height: 380)
-                Text("Marco A. A. Thompson")
-                    .font(.headline)
-                .foregroundColor(Color.black)
-                Text("Licensed Clinician")
-                    .fontWeight(.thin)
-                .foregroundColor(Color.black)
-            }
-        }
-    }
-}
-extension MTHC{
-    struct CM: View{
-        var body: some View{
-            VStack {
-                Image("cm").resizable()
-                .frame(width:380, height: 380)
-                Text("Constance Morse")
-                    .font(.headline)
-                .foregroundColor(Color.black)
-                Text("Associate Director of Counseling and Psychological Services")
-                    .fontWeight(.thin)
-                .foregroundColor(Color.black)
-                .multilineTextAlignment(.center)
-            }
-        }
-    }
-}
-extension MTHC{
-    struct JM: View{
-        var body: some View{
-            VStack {
-                Image("jm").resizable()
-               .frame(width:380, height: 380)
-               Text("Johanna M. Mautz")
-                   .font(.headline)
-               .foregroundColor(Color.black)
-               Text("Licensed Clinician")
-                   .fontWeight(.thin)
-               .foregroundColor(Color.black)
-               .multilineTextAlignment(.center)
-            }
-        }
-    }
-}
-extension MTHC{
-    struct JB: View{
-        var body: some View{
-            VStack {
-                Image("jb").resizable()
-                .frame(width:380, height: 380)
-                Text("Jean Banville")
-                    .font(.headline)
-                .foregroundColor(Color.black)
-                Text("Psychiatric Nurse Practitioner")
-                    .fontWeight(.thin)
-                .foregroundColor(Color.black)
-                .multilineTextAlignment(.center)
-            }
-        }
-    }
-}
-extension MTHC{
-    struct MV: View{
-        var body: some View{
-            VStack {
-               Image("mv").resizable()
-               .frame(width:380, height: 380)
-               Text("Marina Vijayakanthan")
-                   .font(.headline)
-               .foregroundColor(Color.black)
-               Text("Psychiatrist")
-                   .fontWeight(.thin)
-               .foregroundColor(Color.black)
-               .multilineTextAlignment(.center)
-           }
-        }
-    }
-}
-
 //each of these structs represents the text of the bio for each counselor
 extension MTHC{
     struct CTtext: View{
@@ -197,40 +77,35 @@ extension MTHC{
 //actual view of page
 struct MTHC: View {
    var body: some View {
-    VStack {
-            //title
-            Text("Meet the Health Center")
-                .font(.title)
-                .fontWeight(.bold)
+            //initializes each counselor's profile and uses it as NavigationLink to the text of the bio
+            ScrollView {
+                NavigationLink(destination:SLtext()) {
+                    Profile(name: "Szu-Hui Lee", title: "Director of Counseling and Psychological Services", imageurl: "sl")
+                }
+                NavigationLink(destination:CTtext()) {
+                    Profile(name: "Chris A. Thurber", title: "Associate Director of Counseling and Psychological Services", imageurl: "thurber")
+                }
+                NavigationLink(destination:MTtext()) {
+                    Profile(name: "Marco A. A. Thompson", title: "Licensed Clinician", imageurl: "mt")
+                }
+                NavigationLink(destination:CMtext()) {
+                    Profile(name: "Constance Morse", title: "Associate Director of Counseling and Psychological Services", imageurl: "cm")
+                }
+                NavigationLink(destination:JBtext()) {
+                    Profile(name: "Jean Banville", title: "Psychiatric Nurse Practitioner", imageurl: "jb")
+                }
+                NavigationLink(destination:JMtext()) {
+                   Profile(name: "Johanna M. Mautz", title: "Licensed Clinician", imageurl: "jm")
+                }
+                NavigationLink(destination:MVtext()) {
+                    Profile(name: "Marina Vijayakanthan", title: "Psychiatrist", imageurl: "mv")
+                }
+                }.navigationBarTitle("Meet the Health Center", displayMode: .inline)
         
-                //initializes each counselor's image/title and uses it as NavigationLink to the text of the bio
-                ScrollView {
-                    NavigationLink(destination:SLtext()) {
-                        SL()
-                    }
-                    NavigationLink(destination:CTtext()) {
-                        CT()
-                    }
-                    NavigationLink(destination:MTtext()) {
-                        MT()
-                    }
-                    NavigationLink(destination:CMtext()) {
-                        CM()
-                    }
-                    NavigationLink(destination:JBtext()) {
-                        JB()
-                    }
-                    NavigationLink(destination:JMtext()) {
-                        JM()
-                    }
-                    NavigationLink(destination:MVtext()) {
-                        MV()
-                    }
-                    }
-            
-            
-            }
+        
+           
     }
+    
 }
    
 

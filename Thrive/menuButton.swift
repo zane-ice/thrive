@@ -16,14 +16,14 @@ struct menuButton: View {
         RoundedRectangle(cornerRadius: 25, style: .continuous)
             .fill(Color.white)
             .shadow(color: Color.gray, radius: 7, x: 2, y: 5)
-            .frame(width: 300, height: 75)
+            .frame(width: 320, height: 75)
         Text(text)
                 .font(.headline)
                 .fontWeight(.bold)
             .foregroundColor(Color.black)
         Image(systemName: imageurl)
                 .foregroundColor(Color.gray)
-            .offset(x: 125)
+            .offset(x: 135)
                 
         
     }.edgesIgnoringSafeArea(.all)

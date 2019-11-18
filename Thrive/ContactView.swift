@@ -8,21 +8,13 @@ import SwiftUI
 
 struct ContactView: View {
     var body: some View {
-        NavigationView {
             List {
-                HStack {
-                
-                Image("thurber")
-                    .resizable()
-                    .frame(width:60,height:60)
-                    Button(action:  {}) {
-                        Text("Dr. Thurber")
-                    }
+                ForEach(0 ..< 10) { item in
+                    Contact(name: "Dr. Katharina F. Lilly", email: "klilly@exeter.edu")
                 }
-                
-            }.navigationBarTitle(Text("People to Email:"))
-        }
-    }
+        }.navigationBarTitle("People to Email", displayMode: .inline)
+    
+}
 }
 
 struct ContactView_Previews: PreviewProvider {
