@@ -11,13 +11,13 @@ import SwiftUI
 struct infoButton: View {
     var text: String
     // color for button background
-    //let exeterRed = UIColor(red: 0.77, green: 0.13, blue: 0.27) NEED TO FIX
+    let exeterRed = Color(red: 0.77, green: 0.13, blue: 0.27)
     var body: some View{
     //stacks rounded rectangle, text and image
     ZStack {
         //rounded rectangle
         RoundedRectangle(cornerRadius: 25, style: .continuous)
-            .fill(Color.red)
+            .fill(exeterRed)
             .shadow(color: Color.gray, radius: 7, x: 2, y: 5)
             .frame(width: 320, height: 75)
         //text of the button
