@@ -12,7 +12,7 @@ extension Wellness{
     struct nutrition: View{
         var body: some View{
             ScrollView{
-                Text("Balanced meals are key!").font(.body).padding(15)
+                Text("Balanced meals are key! NEED TO FIND MORE INFORMATION").font(.body).padding(15)
             }
         }
     }
@@ -43,8 +43,8 @@ extension Wellness{
 struct Wellness: View {
     var body: some View {
         VStack () {
-            Text("Wellness")
-                .font(.title)
+//            Text("Wellness")
+//                .font(.title)
             
                 ScrollView(){
                 VStack (alignment: .leading, spacing: 50) {
@@ -58,7 +58,7 @@ struct Wellness: View {
                         Text("Meditation")
                     }
                 }
-            }
+            }.navigationBarTitle("Wellness", displayMode: .inline)
             }
         }
 }
