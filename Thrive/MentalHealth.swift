@@ -13,15 +13,8 @@ struct MentalHealth: View {
     @State private var selection = 0
     
     var body: some View {
-        //NavigationView sets up the navigation hierarchy and allows us to use links to other pages
-        NavigationView{
-            ZStack{
                 VStack(spacing: 20){
-                Text("Mental Health")
-                    .font(.largeTitle)
-                    .fontWeight(.black)
-                    .offset(y: 15)
-                    //list of buttons (navigationLinks using menuButton struct)
+                    //list of buttons (navigationLinks using infoButton struct)
                     ScrollView() {
                     VStack(spacing:20){
                        NavigationLink(destination: DisordersView()){
@@ -38,12 +31,8 @@ struct MentalHealth: View {
                        }
                         }
                     }
-                }
-            }.edgesIgnoringSafeArea(.all)
-            //hides navigation bar
-            .navigationBarTitle("")
-            .navigationBarHidden(true)
-        }
+                    }.navigationBarTitle("Mental Health", displayMode: .inline)
+                    .offset(y: 30)
     
 }
 }
