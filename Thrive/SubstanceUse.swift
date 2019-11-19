@@ -109,7 +109,7 @@ struct SubstanceUse: View {
                 Text("Effects of Alcohol on Adolescents")
             }
         
-        }
+        }.navigationBarTitle("Substance Use", displayMode: .inline)
         
     }
     
