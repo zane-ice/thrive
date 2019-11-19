@@ -9,23 +9,37 @@
 import SwiftUI
 
 struct TimeManagement: View {
+
+    @State private var selection = 0
+    
     var body: some View {
-        VStack () {
-            Text("Time Management")
-                .font(.title)
-            
-            ScrollView{
-            VStack (alignment: .leading, spacing: 50) {
-                NavigationLink(destination: ProcrastinationView()){
-                    Text("Dealing with Procrastination")
+        //NavigationView sets up the navigation hierarchy and allows us to use links to other pages
+        NavigationView{
+            ZStack{
+                VStack(spacing: 20){
+                Text("Time Management")
+                    .font(.largeTitle)
+                    .fontWeight(.black)
+                    .offset(y: 15)
+                    //list of buttons (navigationLinks using menuButton struct)
+                    ScrollView() {
+                    VStack(spacing:20){
+                       NavigationLink(destination: ProcrastinationView()){
+                        infoButton(text: "Dealing with Procrastination")
+                       }
+                       NavigationLink(destination: ExonianView()){
+                        infoButton(text: "Advice From Exonians")
+                       }
+                        }
+                    }
                 }
-                NavigationLink(destination: ExonianView()){
-                    Text("Advice From Exonians")
-                }
-            }
-            }
+            }.edgesIgnoringSafeArea(.all)
+            //hides navigation bar
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
         }
-    }
+    
+}
 }
 
 struct ProcrastinationView: View {

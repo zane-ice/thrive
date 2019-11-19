@@ -9,29 +9,43 @@
 import SwiftUI
 
 struct MentalHealth: View {
+
+    @State private var selection = 0
+    
     var body: some View {
-        VStack () {
-            Text("Mental Health")
-                .font(.title)
-            
-            ScrollView(){
-            VStack (alignment: .leading, spacing: 50) {
-                NavigationLink(destination: DisordersView()){
-                    Text("Mental Health Disorders")
+        //NavigationView sets up the navigation hierarchy and allows us to use links to other pages
+        NavigationView{
+            ZStack{
+                VStack(spacing: 20){
+                Text("Mental Health")
+                    .font(.largeTitle)
+                    .fontWeight(.black)
+                    .offset(y: 15)
+                    //list of buttons (navigationLinks using menuButton struct)
+                    ScrollView() {
+                    VStack(spacing:20){
+                       NavigationLink(destination: DisordersView()){
+                        infoButton(text: "Mental Health Disorders")
+                       }
+                       NavigationLink(destination: OnCampusView()){
+                        infoButton(text: "On-Campus Support")
+                       }
+                       NavigationLink(destination: HelpingAFriendView()){
+                        infoButton(text: "Helping A Friend")
+                       }
+                       NavigationLink(destination: PanicView()){
+                        infoButton(text: "Did I Have a Panic Attack?")
+                       }
+                        }
+                    }
                 }
-                NavigationLink(destination: OnCampusView()){
-                    Text("On-Campus Support")
-                }
-                NavigationLink(destination: HelpingAFriendView()){
-                    Text("Helping A Friend")
-                }
-                NavigationLink(destination: PanicView()){
-                    Text("Did I Have a Panic Attack?")
-                }
-            }
+            }.edgesIgnoringSafeArea(.all)
+            //hides navigation bar
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
         }
-        }
-    }
+    
+}
 }
 
 struct HelpingAFriendView: View {
