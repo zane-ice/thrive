@@ -57,26 +57,26 @@ extension Wellness{
 
 struct Wellness: View {
     var body: some View {
-        VStack () {
+        VStack {
 //            Text("Wellness")
 //                .font(.title)
             
                 ScrollView(){
-                VStack (alignment: .leading, spacing: 50) {
+                VStack (alignment: .leading, spacing: 20) {
                     NavigationLink(destination: nutrition()){
-                        Text("Nutrition")
+                        infoButton(text: "Nutrition")
                     }
                     NavigationLink(destination: sleep()){
-                        Text("Sleep")
+                        infoButton(text: "Sleep")
                     }
                     NavigationLink(destination: meditation()){
-                        Text("Meditation")
+                        infoButton(text: "Meditation")
                     }
                     NavigationLink(destination: yoga()){
-                        Text("Yoga")
+                        infoButton(text: "Yoga")
                     }
                 }
-            }.navigationBarTitle("Wellness", displayMode: .inline)
+            }.navigationBarTitle("Wellness", displayMode: .inline).offset(y: 30)
             }
         }
 }

@@ -55,25 +55,27 @@ extension SexualWellness{
 
 struct SexualWellness: View {
    var body: some View {
-    VStack {
+    VStack(spacing: 20) {
 //            Text("Sexual Wellness")
 //                .font(.title)
 //                .fontWeight(.bold)
 
                 ScrollView {
+                    VStack(spacing:20){
                     NavigationLink(destination: behavior()){
-                        Text("Sexually Responsible Behavior")
+                        infoButton(text: "Sexually Responsible Behavior")
                     }
                     NavigationLink(destination: relation()){
-                        Text("Healthy Relationships")
+                        infoButton(text: "Health Relationships")
                     }
                     NavigationLink(destination: abuse()){
-                        Text("Sexual Abuse")
+                        infoButton(text: "Sexual Abuse")
                     }
                     NavigationLink(destination: resources()){
-                        Text("Resources for PEA Students")
+                        infoButton(text: "Resources for PEA Students")
                     }
-                }.navigationBarTitle("Sexual Wellness", displayMode: .inline)
+                    }
+                }.navigationBarTitle("Sexual Wellness", displayMode: .inline).offset(y: 30)
             
             
             }
