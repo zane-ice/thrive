@@ -1,11 +1,3 @@
-//
-//  Profile.swift
-//  Thrive
-//
-//  Created by Zane Ice on 11/18/19.
-//  Copyright © 2019 CSC590. All rights reserved.
-//
-
 import SwiftUI
 //template for each profile in the meet the health center page
 struct Profile: View {

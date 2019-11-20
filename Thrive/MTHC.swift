@@ -1,11 +1,3 @@
-//
-//  MTHC.swift
-//  Thrive
-//
-//  Created by Zane Ice on 11/2/19.
-//  Copyright © 2019 CSC590. All rights reserved.
-//
-
 import SwiftUI
 
 //each of these structs represents the text of the bio for each counselor
