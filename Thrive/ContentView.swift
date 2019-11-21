@@ -23,6 +23,9 @@ struct ContentView: View {
 					//list of buttons (navigationLinks using menuButton struct)
 					ScrollView() {
 					VStack(spacing:20){
+						NavigationLink(destination: MTHC()){
+							menuButton(text: "Meet the Health Center", imageurl: "person.2.fill")
+						}
 						NavigationLink(destination: MentalHealth()){
 							menuButton(text: "Mental Health", imageurl: "smiley.fill")
 						}
@@ -40,9 +43,6 @@ struct ContentView: View {
 						}
 						NavigationLink(destination: Wellness()){
 							menuButton(text: "Wellness", imageurl: "sun.max.fill")
-						}
-						NavigationLink(destination: MTHC()){
-							menuButton(text: "Meet the Health Center", imageurl: "person.2.fill")
 						}
 						NavigationLink(destination: ContactView()){
 							menuButton(text: "Contact", imageurl: "number")
