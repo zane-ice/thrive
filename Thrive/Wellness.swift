@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+//struct that includes information on nutrition
 extension Wellness{
     struct nutrition: View{
         var body: some View{
@@ -20,6 +21,7 @@ extension Wellness{
     }
 }
 
+//struct that includes information on sleep
 extension Wellness{
     struct sleep: View{
         var body: some View{
@@ -32,6 +34,7 @@ extension Wellness{
     }
 }
 
+//struct that includes information on yoga
 extension Wellness{
     struct yoga: View{
         var body: some View{
@@ -44,6 +47,7 @@ extension Wellness{
     }
 }
 
+//struct that ties together various pages and creates buttons
 struct Wellness: View {
     var body: some View {
         VStack {

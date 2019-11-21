@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+//struct that includes information on sexual behavior
 extension SexualWellness{
     struct behavior: View{
         var body: some View{
@@ -19,6 +20,7 @@ extension SexualWellness{
     }
 }
 
+//struct that includes information on healthy relationships
 extension SexualWellness{
     struct relation: View{
         var body: some View{
@@ -30,6 +32,7 @@ extension SexualWellness{
     }
 }
 
+//struct that includes information on sexual abuse
 extension SexualWellness{
     struct abuse: View{
         var body: some View{
@@ -41,6 +44,7 @@ extension SexualWellness{
     }
 }
 
+//struct that includes information on resources for PEA students
 extension SexualWellness{
     struct resources: View{
         var body: some View{
@@ -57,6 +61,7 @@ extension SexualWellness{
     }
 }
 
+//struct that ties together different pages using NavigationLink and creates buttons
 struct SexualWellness: View {
    var body: some View {
     VStack(spacing: 20) {
