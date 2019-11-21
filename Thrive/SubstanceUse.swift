@@ -21,6 +21,16 @@ struct Alcohol: Identifiable {
     
 }
 
+struct Marijuana {
+    var body: some View {
+        ScrollView {
+            VStack {
+                Text("Effects of Marijuana on Adolescents \n")
+                
+            }
+        }
+    }
+}
 
 struct SubstanceUse: View {
     
@@ -72,32 +82,23 @@ struct SubstanceUse: View {
         }
                     Text("Credits to Center for Substance Abuse Prevention and the U.S. Department of Health and Human Services").italic()
         }
-            
-            
-            ) {
-                Text("Risks Associated with Hallocinogens")
+                        ) {
+                infoButton(text: "Risks Associated with Hallocinogens")
             }
-        
         //end of hallucinogens
        
         NavigationLink(destination:
-                
                 VStack {
-                    
                     Text("Effects of Alcohol on Adolescents")
                         .font(.title)
                     
         List(alcRisks) { Alcohol in
-
-
             HStack {
                     VStack {
                     Text(Alcohol.effect)
                         //.fontWeight(.bold)
-                    
                 }
             }
-            
             
         }
                     
@@ -106,7 +107,7 @@ struct SubstanceUse: View {
             
             
             ) {
-                Text("Effects of Alcohol on Adolescents")
+                infoButton(text:"Effects of Alcohol on Adolescents")
             }
         
         }.navigationBarTitle("Substance Use", displayMode: .inline)
