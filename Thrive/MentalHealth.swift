@@ -16,14 +16,14 @@ struct MentalHealth: View {
                NavigationLink(destination: DisordersView()){
                 infoButton(text: "Mental Health Disorders")
                }
-               NavigationLink(destination: OnCampusView()){
-                infoButton(text: "On-Campus Support")
-               }
                NavigationLink(destination: HelpingAFriendView()){
                 infoButton(text: "Helping A Friend")
                }
                NavigationLink(destination: PanicView()){
                 infoButton(text: "Did I Have a Panic Attack?")
+               }
+               NavigationLink(destination: CampusView()){
+                infoButton(text: "Resources for PEA Students")
                }
             }
         }.navigationBarTitle("Mental Health", displayMode: .inline)
@@ -55,10 +55,11 @@ struct DisordersView: View {
     }
 }
 
-struct OnCampusView: View {
+struct CampusView: View {
     var body: some View {
         ScrollView{
         VStack(alignment: .leading, spacing: 10) {
+            Text("On-Campus Support").font(.body).fontWeight(.bold).padding(15)
             Text("Ways to Get Involved:").fontWeight(.bold).padding(15)
             Text("\u{2022} Active Minds: \n Increasing awareness and knowledge about mental health, fundraising and increasing support for mental health and suicide prevention campaigns \n \u{2022} Mental Health Committee, Student Council: \n Working on multiple avenues around campus to improve and measure mental health on campus \n \u{2022} Psychology Club: \n Studying the brain and human psychology, including analyzing mental health disorders and human emotions \n \u{2022} Student Mental Health Alliance \n \u{2022} H4: Mental Health and Health Organization").padding(.leading, 15)
             Text("Counseling and Pscyhological Service (CAPS)").fontWeight(.bold).padding(15)
@@ -70,6 +71,7 @@ struct OnCampusView: View {
                 Text("Contact").padding(.leading, 15)
             }
             Text("From Dr. Thurber, Lamont Health Center").padding(15)
+            Text("Off-Campus Support").font(.body).fontWeight(.bold).padding(15)
         }
         }
     }
