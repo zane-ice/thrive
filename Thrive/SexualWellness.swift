@@ -72,7 +72,7 @@ struct SexualWellness: View {
                         infoButton(text: "Sexually Responsible Behavior")
                     }
                     NavigationLink(destination: relation()){
-                        infoButton(text: "Health Relationships")
+                        infoButton(text: "Healthy Relationships")
                     }
                     NavigationLink(destination: abuse()){
                         infoButton(text: "Sexual Abuse")
