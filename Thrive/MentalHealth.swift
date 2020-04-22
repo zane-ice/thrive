@@ -13,6 +13,9 @@ struct MentalHealth: View {
         ScrollView() {
             //list of buttons (navigationLinks using infoButton struct)
              VStack (alignment: .leading, spacing: 20) {
+               NavigationLink(destination: CampusView()){
+                infoButton(text: "Resources for PEA Students")
+               }
                NavigationLink(destination: DisordersView()){
                 infoButton(text: "Mental Health Disorders")
                }
@@ -21,9 +24,6 @@ struct MentalHealth: View {
                }
                NavigationLink(destination: PanicView()){
                 infoButton(text: "Did I Have a Panic Attack?")
-               }
-               NavigationLink(destination: CampusView()){
-                infoButton(text: "Resources for PEA Students")
                }
             }
         }.navigationBarTitle("Mental Health", displayMode: .inline)

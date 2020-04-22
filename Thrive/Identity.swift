@@ -141,34 +141,54 @@ struct Identity: View {
         affinity(short: "", long: ""),
         affinity(short: "", long: "")]
     
+
+struct resources: View {
+        var body: some View {
+            ScrollView{
+            VStack(alignment: .leading, spacing: 10) {
+                Text("On-Campus Support").font(.body).fontWeight(.bold).padding(15)
+                Text("Ways to Get Involved:").fontWeight(.bold).padding(15)
+                Text("\u{2022} Active Minds: \n Increasing awareness and knowledge about mental health, fundraising and increasing support for mental health and suicide prevention campaigns \n \u{2022} Mental Health Committee, Student Council: \n Working on multiple avenues around campus to improve and measure mental health on campus \n \u{2022} Psychology Club: \n Studying the brain and human psychology, including analyzing mental health disorders and human emotions \n \u{2022} Student Mental Health Alliance \n \u{2022} H4: Mental Health and Health Organization").padding(.leading, 15)
+                Text("Counseling and Pscyhological Service (CAPS)").fontWeight(.bold).padding(15)
+                Text("The Counseling and Psychological Services offer amazing counselors who are more than willing to help with many mental health issues. Please refer to the below pages for much more in depth support and assistance:").padding(.leading,15)
+                NavigationLink(destination: MTHC()){
+                    Text("Meet the Health Center").padding(.leading, 15)
+                }
+                NavigationLink(destination: ContactView()){
+                    Text("Contact").padding(.leading, 15)
+                }
+                Text("From Dr. Thurber, Lamont Health Center").padding(15)
+                Text("Off-Campus Support").font(.body).fontWeight(.bold).padding(15)
+            }
+            }
+        }
+    }
+    
     
     var body: some View {
-        VStack (alignment: .center, spacing: 10) {
-        Text("Identity")
-            .font(.title)
-            .fontWeight(.bold)
+        VStack (spacing: 20) {
+            ScrollView {
+            VStack(spacing:20){
+        
+            NavigationLink(destination: resources()){
+                infoButton(text: "Resources for PEA Students")
+            }
             
-                NavigationLink(destination:
-                    
-                    VStack {
-                        Text("13 Skills for Culturally Competent Communication")
-                            .font(.title)
-                            .fontWeight(.bold)
+            NavigationLink(destination:
+                VStack{
+            Text("13 Skills for Culturally Competent Communication").font(.title)
                         
             List(comData) { communication in
-
-
                 HStack(alignment: .center) {
                     VStack(alignment: .center) {
-                        Text(communication.short)
-                            .fontWeight(.bold)
+                        Text(communication.short).fontWeight(.bold)
                         Text(communication.long)
                     }
                 }
-            }
-                        Text("Credits to Jones & Associates, Inc.").italic()
-            }
-                ) {
+                }
+            Text("Credits to Jones & Associates, Inc.").italic()
+                }
+            ) {
                     infoButton(text: "13 Skills for Culturally Competent Communication")
                 }
             //End of 13 Skills
@@ -198,9 +218,8 @@ struct Identity: View {
                 infoButton(text: "Gender Support Plan")
             }
             
-            
-        }.navigationBarTitle("Identity", displayMode: .inline)
-        //end of VStack
+        }.navigationBarTitle("Identity", displayMode: .inline).offset(y: 30)
+            }}
     }
 }
 
@@ -209,3 +228,4 @@ struct Identity_Previews: PreviewProvider {
         Identity()
     }
 }
+

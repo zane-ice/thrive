@@ -35,14 +35,14 @@ struct ContentView: View {
 						NavigationLink(destination: Identity()){
 							menuButton(text: "Identity", imageurl: "person.fill")
 						}
-						NavigationLink(destination: TimeManagement()){
-							menuButton(text: "Time Management", imageurl: "clock.fill")
-						}
 						NavigationLink(destination: SubstanceUse()){
 							menuButton(text: "Substance Use", imageurl: "smoke.fill")
 						}
 						NavigationLink(destination: Wellness()){
 							menuButton(text: "Wellness", imageurl: "sun.max.fill")
+						}
+						NavigationLink(destination: TimeManagement()){
+							menuButton(text: "Time Management", imageurl: "clock.fill")
 						}
 						NavigationLink(destination: ContactView()){
 							menuButton(text: "Contact", imageurl: "number")

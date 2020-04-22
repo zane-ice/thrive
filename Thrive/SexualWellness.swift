@@ -63,11 +63,12 @@ extension SexualWellness{
 
 //struct that ties together different pages using NavigationLink and creates buttons
 struct SexualWellness: View {
-   var body: some View {
-    VStack(spacing: 20) {
-
+    var body: some View {
                 ScrollView {
                     VStack(spacing:20){
+                    NavigationLink(destination: resources()){
+                        infoButton(text: "Resources for PEA Students")
+                    }
                     NavigationLink(destination: behavior()){
                         infoButton(text: "Sexually Responsible Behavior")
                     }
@@ -77,14 +78,8 @@ struct SexualWellness: View {
                     NavigationLink(destination: abuse()){
                         infoButton(text: "Sexual Abuse")
                     }
-                    NavigationLink(destination: resources()){
-                        infoButton(text: "Resources for PEA Students")
-                    }
                     }
                 }.navigationBarTitle("Sexual Wellness", displayMode: .inline).offset(y: 30)
-            
-            
-            }
     }
 }
 

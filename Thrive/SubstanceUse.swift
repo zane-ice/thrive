@@ -21,12 +21,22 @@ struct Alcohol: Identifiable {
     
 }
 
-struct Marijuana {
+struct Marijuana: View {
     var body: some View {
         ScrollView {
             VStack {
                 Text("Effects of Marijuana on Adolescents \n")
                 
+            }
+        }
+    }
+}
+
+struct resources: View {
+    var body: some View {
+        ScrollView{
+            VStack {
+                Text("On-Campus Support \n")
             }
         }
     }
@@ -54,34 +64,34 @@ struct SubstanceUse: View {
          Alcohol(effect: ""),
          Alcohol(effect:"Research shows that drinking during the teen years could interfere with normal brain development and change the brain in ways that: Have negative effects on information processing and learning; Increase the risk of developing an alcohol use disorder later in life")]
     
-    
-    
-    
     var body: some View {
-        
-        VStack {
-        
+        ScrollView{
+        VStack(alignment: .leading, spacing: 20){
+            
+            NavigationLink(destination: resources()){
+                infoButton(text: "Resources for PEA Students")
+            }
+            
+            NavigationLink(destination: Marijuana()){
+                infoButton(text: "Marijuana")
+            }
+            
             NavigationLink(destination:
-                
                 VStack {
                     
-                    Text("Risks Associated with Hallocinogens")
-                        .font(.title)
+                    Text("Risks Associated with Hallocinogens").font(.title)
                     
-        List(modelData) { Hallucinogen in
-
-
-            HStack {
+                    List(modelData) { Hallucinogen in
+                    HStack {
                     VStack {
                     Text(Hallucinogen.risk)
                         //.fontWeight(.bold)
                     
-                }
-            }
-            
-        }
+                    }}
+                    }
+                    
                     Text("Credits to Center for Substance Abuse Prevention and the U.S. Department of Health and Human Services").italic()
-        }
+                }
                         ) {
                 infoButton(text: "Risks Associated with Hallocinogens")
             }
@@ -110,12 +120,12 @@ struct SubstanceUse: View {
                 infoButton(text:"Effects of Alcohol on Adolescents")
             }
         
-        }.navigationBarTitle("Substance Use", displayMode: .inline)
+        }.navigationBarTitle("Substance Use", displayMode: .inline).offset(y: 30)
         
     }
     
     
-    
+    }
     
 }
 

@@ -8,8 +8,17 @@
 
 import SwiftUI
 
-//struct that includes information on nutrition
-extension Wellness{
+struct Resources: View {
+    var body: some View {
+        ScrollView{
+            VStack {
+                Text("On-Campus Support \n")
+            }
+        }
+    }
+}
+
+
     struct nutrition: View{
         var body: some View{
             ScrollView{
@@ -19,10 +28,7 @@ extension Wellness{
             }
         }
     }
-}
 
-//struct that includes information on sleep
-extension Wellness{
     struct sleep: View{
         var body: some View{
             ScrollView{
@@ -32,10 +38,8 @@ extension Wellness{
             }
         }
     }
-}
 
 //struct that includes information on yoga
-extension Wellness{
     struct yoga: View{
         var body: some View{
             ScrollView{
@@ -45,7 +49,6 @@ extension Wellness{
             }
         }
     }
-}
 
 //struct that ties together various pages and creates buttons
 struct Wellness: View {
@@ -56,6 +59,10 @@ struct Wellness: View {
             
                 ScrollView(){
                 VStack (alignment: .leading, spacing: 20) {
+                    NavigationLink(destination: Resources()){
+                        infoButton(text: "Resources for PEA Students")
+                    }
+                    
                     NavigationLink(destination: nutrition()){
                         infoButton(text: "Nutrition")
                     }
