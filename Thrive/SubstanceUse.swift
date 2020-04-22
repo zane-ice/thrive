@@ -35,8 +35,21 @@ struct Marijuana: View {
 struct resources: View {
     var body: some View {
         ScrollView{
-            VStack {
-                Text("On-Campus Support \n")
+            VStack{
+            Text("On-Campus Support").font(.body).fontWeight(.bold).padding(15)
+            Text("ASAP Program: https://phillipsexeteracademy.sharepoint.com/sites/ec-caps/SitePages/Make-an-Appointment.aspx").font(.body).padding(15)
+            Text("PEA's Policy:").font(.body).padding(15)
+            }
+            VStack{
+            Text("Off-Campus Support").font(.body).fontWeight(.bold).padding(15)
+            Text("Addiction Treatment Centers in Exeter").font(.body).padding(15)
+            Image("substance1").resizable().aspectRatio(contentMode: .fit)
+            Image("substance2").resizable().aspectRatio(contentMode: .fit)
+            Image("substance3").resizable().aspectRatio(contentMode: .fit)
+            Image("substance4.1").resizable().aspectRatio(contentMode: .fit)
+            Image("substance4.2").resizable().aspectRatio(contentMode: .fit)
+            Image("substance4.3").resizable().aspectRatio(contentMode: .fit)
+            Text("Credit to www.drug-rehabs.org").font(.body).italic().padding(15)
             }
         }
     }
