@@ -27,6 +27,7 @@
 		AABCBD6C235F50E300B759F3 /* ThriveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD6B235F50E300B759F3 /* ThriveTests.swift */; };
 		AABCBD77235F50E300B759F3 /* ThriveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD76235F50E300B759F3 /* ThriveUITests.swift */; };
 		CB095EB12383A28200ACF3AF /* infoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB095EB02383A28200ACF3AF /* infoButton.swift */; };
+		E662EFFF2452156A00D82FF7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E662EFFE2452156A00D82FF7 /* MapView.swift */; };
 		E67B9D42238093880038B6C7 /* Wellness.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67B9D41238093880038B6C7 /* Wellness.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		AABCBD76235F50E300B759F3 /* ThriveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThriveUITests.swift; sourceTree = "<group>"; };
 		AABCBD78235F50E300B759F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB095EB02383A28200ACF3AF /* infoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoButton.swift; sourceTree = "<group>"; };
+		E662EFFE2452156A00D82FF7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		E67B9D41238093880038B6C7 /* Wellness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wellness.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +137,7 @@
 				AAB6C13F2382ED28000DB073 /* Profile.swift */,
 				AAAB3716236E042500B8B6D8 /* MentalHealth.swift */,
 				AAAB3720236E125300B8B6D8 /* SexualWellness.swift */,
+				E662EFFE2452156A00D82FF7 /* MapView.swift */,
 				AAAB371A236E109400B8B6D8 /* Identity.swift */,
 				AAAB371C236E11F600B8B6D8 /* SubstanceUse.swift */,
 				E67B9D41238093880038B6C7 /* Wellness.swift */,
@@ -308,6 +311,7 @@
 			files = (
 				AAB6C13A2382454C000DB073 /* menuButton.swift in Sources */,
 				AAB6C1402382ED28000DB073 /* Profile.swift in Sources */,
+				E662EFFF2452156A00D82FF7 /* MapView.swift in Sources */,
 				AAAB371F236E123800B8B6D8 /* TimeManagement.swift in Sources */,
 				CB095EB12383A28200ACF3AF /* infoButton.swift in Sources */,
 				AABCBD55235F50DB00B759F3 /* AppDelegate.swift in Sources */,

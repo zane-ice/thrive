@@ -44,6 +44,21 @@ extension SexualWellness{
     }
 }
 
+extension SexualWellness{
+    struct plannedp: View{
+        var body: some View{
+            ScrollView{
+            Text("https://www.plannedparenthood.org/health-center/new-hampshire/exeter/03833/exeter-health-center-2739-91770")
+                Text("Call 603-772-9315 to make an appointment")
+                Text("Services Offered \n \u{2022} Abortion Referrals \n \u{2022} Birth Control \n \u{2022} General Health Care \n \u{2022} HIV Testing \n \u{2022} LGBTQ Services \n \u{2022} Men's Health Care \n \u{2022} Morning-After Pill (Emergency Contrapception) \n \u{2022} Pregnancy Testing & Services \n \u{2022} STD Testing, Treatment & Vaccines \n \u{2022} Women's Health Care").font(.body).padding(15)
+                MapView()
+                .frame(height: 300)
+                Text("Credit to Planned Parenthood").font(.body).italic().padding(15)
+            }
+        }
+    }
+}
+
 //struct that includes information on resources for PEA students
 extension SexualWellness{
     struct resources: View{
@@ -77,6 +92,9 @@ struct SexualWellness: View {
                     }
                     NavigationLink(destination: abuse()){
                         infoButton(text: "Sexual Abuse")
+                    }
+                    NavigationLink(destination: plannedp()){
+                        infoButton(text: "Planned Parenthood")
                     }
                     }
                 }.navigationBarTitle("Sexual Wellness", displayMode: .inline).offset(y: 30)
