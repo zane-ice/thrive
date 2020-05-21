@@ -13,7 +13,7 @@ struct MentalHealth: View {
         ScrollView() {
             //list of buttons (navigationLinks using infoButton struct)
              VStack (alignment: .leading, spacing: 20) {
-               NavigationLink(destination: CampusView()){
+               NavigationLink(destination: ResourcesMH()){
                 infoButton(text: "Resources for PEA Students")
                }
                NavigationLink(destination: DisordersView()){
@@ -55,28 +55,6 @@ struct DisordersView: View {
     }
 }
 
-struct CampusView: View {
-    var body: some View {
-        ScrollView{
-        VStack(alignment: .leading, spacing: 10) {
-            Text("On-Campus Support").font(.body).fontWeight(.bold).padding(15)
-            Text("Ways to Get Involved:").fontWeight(.bold).padding(15)
-            Text("\u{2022} Active Minds: \n Increasing awareness and knowledge about mental health, fundraising and increasing support for mental health and suicide prevention campaigns \n \u{2022} Mental Health Committee, Student Council: \n Working on multiple avenues around campus to improve and measure mental health on campus \n \u{2022} Psychology Club: \n Studying the brain and human psychology, including analyzing mental health disorders and human emotions \n \u{2022} Student Mental Health Alliance \n \u{2022} H4: Mental Health and Health Organization").padding(.leading, 15)
-            Text("Counseling and Pscyhological Service (CAPS)").fontWeight(.bold).padding(15)
-            Text("The Counseling and Psychological Services offer amazing counselors who are more than willing to help with many mental health issues. Please refer to the below pages for much more in depth support and assistance:").padding(.leading,15)
-            NavigationLink(destination: MTHC()){
-                Text("Meet the Health Center").padding(.leading, 15)
-            }
-            NavigationLink(destination: ContactView()){
-                Text("Contact").padding(.leading, 15)
-            }
-            Text("From Dr. Thurber, Lamont Health Center").padding(15)
-            Text("Off-Campus Support").font(.body).fontWeight(.bold).padding(15)
-        }
-        }
-    }
-}
-
 struct PanicView: View {
     var body: some View {
         ScrollView{
@@ -97,5 +75,16 @@ struct PanicView: View {
 struct MentalHealth_Previews: PreviewProvider {
     static var previews: some View {
         MentalHealth()
+    }
+}
+
+struct ResourcesMH : UIViewControllerRepresentable {
+    func makeUIViewController(context: UIViewControllerRepresentableContext<ResourcesMH>) -> UIViewController {
+        let storyboard = UIStoryboard(name: "ResourcesMH", bundle: Bundle.main)
+        let controller = storyboard.instantiateViewController(identifier: "Home")
+        return controller
+    }
+    
+    func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<ResourcesMH>) {
     }
 }

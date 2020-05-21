@@ -28,6 +28,7 @@
 		AABCBD77235F50E300B759F3 /* ThriveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD76235F50E300B759F3 /* ThriveUITests.swift */; };
 		CB095EB12383A28200ACF3AF /* infoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB095EB02383A28200ACF3AF /* infoButton.swift */; };
 		E662EFFF2452156A00D82FF7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E662EFFE2452156A00D82FF7 /* MapView.swift */; };
+		E662F0012464897800D82FF7 /* ResourcesMH.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E662F0002464897800D82FF7 /* ResourcesMH.storyboard */; };
 		E67B9D42238093880038B6C7 /* Wellness.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67B9D41238093880038B6C7 /* Wellness.swift */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		AABCBD78235F50E300B759F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB095EB02383A28200ACF3AF /* infoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoButton.swift; sourceTree = "<group>"; };
 		E662EFFE2452156A00D82FF7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		E662F0002464897800D82FF7 /* ResourcesMH.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResourcesMH.storyboard; sourceTree = "<group>"; };
 		E67B9D41238093880038B6C7 /* Wellness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wellness.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +148,7 @@
 				AAB6C13D23825E50000DB073 /* Contact.swift */,
 				AABCBD5A235F50E300B759F3 /* Assets.xcassets */,
 				AABCBD5F235F50E300B759F3 /* LaunchScreen.storyboard */,
+				E662F0002464897800D82FF7 /* ResourcesMH.storyboard */,
 				AABCBD62235F50E300B759F3 /* Info.plist */,
 				AABCBD5C235F50E300B759F3 /* Preview Content */,
 			);
@@ -283,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AABCBD61235F50E300B759F3 /* LaunchScreen.storyboard in Resources */,
+				E662F0012464897800D82FF7 /* ResourcesMH.storyboard in Resources */,
 				AABCBD5E235F50E300B759F3 /* Preview Assets.xcassets in Resources */,
 				AABCBD5B235F50E300B759F3 /* Assets.xcassets in Resources */,
 			);
