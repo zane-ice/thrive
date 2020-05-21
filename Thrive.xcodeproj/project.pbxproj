@@ -27,6 +27,15 @@
 		AABCBD6C235F50E300B759F3 /* ThriveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD6B235F50E300B759F3 /* ThriveTests.swift */; };
 		AABCBD77235F50E300B759F3 /* ThriveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCBD76235F50E300B759F3 /* ThriveUITests.swift */; };
 		CB095EB12383A28200ACF3AF /* infoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB095EB02383A28200ACF3AF /* infoButton.swift */; };
+		CB10CED6246DBF7800678C72 /* Meet_Chris_Thurber.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CB10CECF246DBF6E00678C72 /* Meet_Chris_Thurber.mp4 */; };
+		CB10CED7246DBF7800678C72 /* Meet_Szu-Hui_Lee.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CB10CED0246DBF7000678C72 /* Meet_Szu-Hui_Lee.mp4 */; };
+		CB10CED8246DBF7800678C72 /* Meet_Marina_Vijayakanthan.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CB10CED1246DBF7200678C72 /* Meet_Marina_Vijayakanthan.mp4 */; };
+		CB10CED9246DBF7800678C72 /* Meet_Marco_Thompson.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CB10CED2246DBF7300678C72 /* Meet_Marco_Thompson.mp4 */; };
+		CB10CEDA246DBF7800678C72 /* Meet_Johanna_Mautz.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CB10CED3246DBF7500678C72 /* Meet_Johanna_Mautz.mp4 */; };
+		CB10CEDB246DBF7800678C72 /* Meet_Connie_Morse.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CB10CED4246DBF7700678C72 /* Meet_Connie_Morse.mp4 */; };
+		CB10CEDC246DBF7800678C72 /* Meet_Jean_Banville.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CB10CED5246DBF7800678C72 /* Meet_Jean_Banville.mp4 */; };
+		CB10CEE0246DC09E00678C72 /* player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB10CEDF246DC09E00678C72 /* player.swift */; };
+		CB10CEE2246DC2D800678C72 /* teleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB10CEE1246DC2D800678C72 /* teleButton.swift */; };
 		E662EFFF2452156A00D82FF7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E662EFFE2452156A00D82FF7 /* MapView.swift */; };
 		E662F0012464897800D82FF7 /* ResourcesMH.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E662F0002464897800D82FF7 /* ResourcesMH.storyboard */; };
 		E67B9D42238093880038B6C7 /* Wellness.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67B9D41238093880038B6C7 /* Wellness.swift */; };
@@ -76,6 +85,15 @@
 		AABCBD76235F50E300B759F3 /* ThriveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThriveUITests.swift; sourceTree = "<group>"; };
 		AABCBD78235F50E300B759F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB095EB02383A28200ACF3AF /* infoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoButton.swift; sourceTree = "<group>"; };
+		CB10CECF246DBF6E00678C72 /* Meet_Chris_Thurber.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Meet_Chris_Thurber.mp4; sourceTree = "<group>"; };
+		CB10CED0246DBF7000678C72 /* Meet_Szu-Hui_Lee.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Meet_Szu-Hui_Lee.mp4"; sourceTree = "<group>"; };
+		CB10CED1246DBF7200678C72 /* Meet_Marina_Vijayakanthan.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Meet_Marina_Vijayakanthan.mp4; sourceTree = "<group>"; };
+		CB10CED2246DBF7300678C72 /* Meet_Marco_Thompson.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Meet_Marco_Thompson.mp4; sourceTree = "<group>"; };
+		CB10CED3246DBF7500678C72 /* Meet_Johanna_Mautz.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Meet_Johanna_Mautz.mp4; sourceTree = "<group>"; };
+		CB10CED4246DBF7700678C72 /* Meet_Connie_Morse.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Meet_Connie_Morse.mp4; sourceTree = "<group>"; };
+		CB10CED5246DBF7800678C72 /* Meet_Jean_Banville.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Meet_Jean_Banville.mp4; sourceTree = "<group>"; };
+		CB10CEDF246DC09E00678C72 /* player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = player.swift; sourceTree = "<group>"; };
+		CB10CEE1246DC2D800678C72 /* teleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teleButton.swift; sourceTree = "<group>"; };
 		E662EFFE2452156A00D82FF7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		E662F0002464897800D82FF7 /* ResourcesMH.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResourcesMH.storyboard; sourceTree = "<group>"; };
 		E67B9D41238093880038B6C7 /* Wellness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wellness.swift; sourceTree = "<group>"; };
@@ -109,6 +127,13 @@
 		AABCBD48235F50DB00B759F3 = {
 			isa = PBXGroup;
 			children = (
+				CB10CECF246DBF6E00678C72 /* Meet_Chris_Thurber.mp4 */,
+				CB10CED4246DBF7700678C72 /* Meet_Connie_Morse.mp4 */,
+				CB10CED5246DBF7800678C72 /* Meet_Jean_Banville.mp4 */,
+				CB10CED3246DBF7500678C72 /* Meet_Johanna_Mautz.mp4 */,
+				CB10CED2246DBF7300678C72 /* Meet_Marco_Thompson.mp4 */,
+				CB10CED1246DBF7200678C72 /* Meet_Marina_Vijayakanthan.mp4 */,
+				CB10CED0246DBF7000678C72 /* Meet_Szu-Hui_Lee.mp4 */,
 				AABCBD53235F50DB00B759F3 /* Thrive */,
 				AABCBD6A235F50E300B759F3 /* ThriveTests */,
 				AABCBD75235F50E300B759F3 /* ThriveUITests */,
@@ -129,6 +154,8 @@
 		AABCBD53235F50DB00B759F3 /* Thrive */ = {
 			isa = PBXGroup;
 			children = (
+				CB10CEDF246DC09E00678C72 /* player.swift */,
+				CB10CEE1246DC2D800678C72 /* teleButton.swift */,
 				AABCBD54235F50DB00B759F3 /* AppDelegate.swift */,
 				AABCBD56235F50DB00B759F3 /* SceneDelegate.swift */,
 				CB095EB02383A28200ACF3AF /* infoButton.swift */,
@@ -285,6 +312,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB10CED6246DBF7800678C72 /* Meet_Chris_Thurber.mp4 in Resources */,
+				CB10CED7246DBF7800678C72 /* Meet_Szu-Hui_Lee.mp4 in Resources */,
+				CB10CED8246DBF7800678C72 /* Meet_Marina_Vijayakanthan.mp4 in Resources */,
+				CB10CED9246DBF7800678C72 /* Meet_Marco_Thompson.mp4 in Resources */,
+				CB10CEDA246DBF7800678C72 /* Meet_Johanna_Mautz.mp4 in Resources */,
+				CB10CEDB246DBF7800678C72 /* Meet_Connie_Morse.mp4 in Resources */,
+				CB10CEDC246DBF7800678C72 /* Meet_Jean_Banville.mp4 in Resources */,
 				AABCBD61235F50E300B759F3 /* LaunchScreen.storyboard in Resources */,
 				E662F0012464897800D82FF7 /* ResourcesMH.storyboard in Resources */,
 				AABCBD5E235F50E300B759F3 /* Preview Assets.xcassets in Resources */,
@@ -313,10 +347,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB10CEE2246DC2D800678C72 /* teleButton.swift in Sources */,
 				AAB6C13A2382454C000DB073 /* menuButton.swift in Sources */,
 				AAB6C1402382ED28000DB073 /* Profile.swift in Sources */,
 				E662EFFF2452156A00D82FF7 /* MapView.swift in Sources */,
 				AAAB371F236E123800B8B6D8 /* TimeManagement.swift in Sources */,
+				CB10CEE0246DC09E00678C72 /* player.swift in Sources */,
 				CB095EB12383A28200ACF3AF /* infoButton.swift in Sources */,
 				AABCBD55235F50DB00B759F3 /* AppDelegate.swift in Sources */,
 				AABCBD57235F50DB00B759F3 /* SceneDelegate.swift in Sources */,

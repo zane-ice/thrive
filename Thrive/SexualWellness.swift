@@ -63,20 +63,58 @@ extension SexualWellness{
 extension SexualWellness{
     struct resources: View{
         var body: some View{
-            ScrollView{
-                Text("On-Campus Support").font(.body).fontWeight(.bold).padding(15)
-                Text("\u{2022} 24-hour on-call Counselor: 603-777-3420 \n \u{2022} 24-hour on-call Dean’s Office and Campus Security: 603-777-4444 \n \u{2022} Director of Student Safety and Wellbeing: Christina D. Palmer, 603-929-9598, cdpalmer@exeter.edu \n \u{2022} PEA Counselors \n \t \u{2022} Chris Thurber, Ph.D., 603-777-3528, cthurber@exeter.edu  \n \t \u{2022} Connie Morse, LICSW, 603-777-3431, cmorse@exeter.edu \n \t \u{2022} Szu-Hui Lee, Ph.D., 603-777-3532, slee@exeter.edu  \n \u{2022} PEA Contracted Psychiatrist: Emad Milad, M.D., PEA: 603-777-3420 (Wednesdays), Hampstead Hospital: 603-436-0600, emilad@exeter.edu \n \u{2022} Ethics Point: PEA Confidential Misconduct Reporting Site: http://bit.ly/PEAreport").font(.body).padding(15)
-                Text("Off-Campus Support").font(.body).fontWeight(.bold).padding(15)
-                Text("\u{2022} Community Counselors \n \t \u{2022} Andrew Nathan, Psy D., 603-772-3462, 14 Front Street Exeter NH \n \t \u{2022} Beth Salvi-Hudgins, LICSW, 603-773-5899  \n \t \u{2022} Jane Woodard, LICSW, 603-773-5899, 2 Franklin Street Exeter NH \n \t \u{2022} Lynn Perrin-Wilhousky, LICSW, 603-778-7433, Exeter Counseling Center \n \u{2022} HAVEN \n \t \u{2022} Violence Prevention and Sexual Assault Support Services: http://havennh.org/ \n \t \u{2022} 24-hour confidential hotline: 603-994-7263\n \t \u{2022} Advocacy \n \t \u{2022} Counseling and support group referrals \n \u{2022} Exeter Police Department: 603-772-1212, http://exeternh.gov/police").font(.body).padding(15)
-                Text("PEA's Practice and Programs: https://www.exeter.edu/home/about-us/our-commitment-safety/practice-programs").font(.body).padding(15)
-                Image("img1").resizable().aspectRatio(contentMode: .fit)
-                Text("Credit to Phillips Exeter Academy").font(.body).italic().padding(15)
+            ScrollView {
+                VStack {
+                    Text("On-Campus Support")
+                    Text("\u{2022} 24-hour on-call Counselor:")
+                    Text("\u{2022} 24-hour on-call Dean’s Office and Campus Security: ")
+                    teleButton(text: "603-777-3420")
+                    Text("\n \u{2022} Director of Student Safety and Wellbeing: Christina D. Palmer")
+                    teleButton(text: "603-929-9598")
+                    Text("cdpalmer@exeter.edu \n \u{2022} PEA Counselors \n \t \u{2022} Chris Thurber, Ph.D.")
+                    teleButton(text: "603-777-3528")
+                    Text("cthurber@exeter.edu  \n \t \u{2022} Connie Morse, LICSW")
+                    teleButton(text: "603-777-3431")
+                }
+                VStack {
+                    Text("cmorse@exeter.edu \n \t \u{2022} Szu-Hui Lee, Ph.D.")
+                    teleButton(text: "603-777-3532")
+                    Text("slee@exeter.edu  \n \u{2022} PEA Contracted Psychiatrist: Emad Milad, M.D. PEA: ")
+                    teleButton(text: "603-777-3420")
+                    Text("(Wednesdays), Hampstead Hospital: ")
+                    teleButton(text: "603-436-0600")
+                    Text("emilad@exeter.edu \n \u{2022} Ethics Point: PEA Confidential Misconduct Reporting Site:")
+                    Button("http://bit.ly/PEAreport") {UIApplication.shared.open(URL(string: "http://bit.ly/PEAreport")!)}
+                    Text("Off-Campus Support")
+                    Text("\u{2022} Community Counselors \n \t \u{2022} Andrew Nathan, Psy D.")
+                }
+                VStack {
+                    teleButton(text: "603-772-3462")
+                    Text("14 Front Street Exeter NH \n \t \u{2022} Beth Salvi-Hudgins, LICSW")
+                    teleButton(text: "603-773-5899")
+                    Text("\n \t \u{2022} Jane Woodard, LICSW")
+                    teleButton(text: "603-773-5899")
+                    Text("2 Franklin Street Exeter NH \n \t \u{2022} Lynn Perrin-Wilhousky, LICSW")
+                    teleButton(text: "603-778-7433")
+                    Text("Exeter Counseling Center \n \u{2022} HAVEN \n \t \u{2022} Violence Prevention and Sexual Assault Support Services:")
+                    Button("http://havennh.org/") {UIApplication.shared.open(URL(string: "http://havennh.org/")!)}
+                    Text("\n \t \u{2022} 24-hour confidential hotline:")
+                }
+                VStack {
+                    teleButton(text: "603-994-7263")
+                    Text("\n \t \u{2022} Advocacy \n \t \u{2022} Counseling and support group referrals \n \u{2022} Exeter Police Department:")
+                    teleButton(text: "603-772-1212")
+                    Button("http://exeternh.gov/police") {UIApplication.shared.open(URL(string: "http://exeternh.gov/police")!)}
+                    Text("PEA's Practice and Programs:")
+                    Button("https://www.exeter.edu/home/about-us/our-commitment-safety/practice-programs") {UIApplication.shared.open(URL(string: "https://www.exeter.edu/home/about-us/our-commitment-safety/practice-programs")!)}
+                    Image("img1").resizable().aspectRatio(contentMode: .fit)
+                    Text("Credit to Phillips Exeter Academy")
+                }
             }
         }
     }
 }
 
-//struct that ties together different pages using NavigationLink and creates buttons
 struct SexualWellness: View {
     var body: some View {
                 ScrollView {
@@ -106,3 +144,4 @@ struct SexualWellness_Previews: PreviewProvider {
         SexualWellness()
     }
 }
+
