@@ -37,7 +37,6 @@
 		CB10CEE0246DC09E00678C72 /* player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB10CEDF246DC09E00678C72 /* player.swift */; };
 		CB10CEE2246DC2D800678C72 /* teleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB10CEE1246DC2D800678C72 /* teleButton.swift */; };
 		E662EFFF2452156A00D82FF7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E662EFFE2452156A00D82FF7 /* MapView.swift */; };
-		E662F0012464897800D82FF7 /* ResourcesMH.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E662F0002464897800D82FF7 /* ResourcesMH.storyboard */; };
 		E67B9D42238093880038B6C7 /* Wellness.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67B9D41238093880038B6C7 /* Wellness.swift */; };
 /* End PBXBuildFile section */
 
@@ -95,7 +94,6 @@
 		CB10CEDF246DC09E00678C72 /* player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = player.swift; sourceTree = "<group>"; };
 		CB10CEE1246DC2D800678C72 /* teleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teleButton.swift; sourceTree = "<group>"; };
 		E662EFFE2452156A00D82FF7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		E662F0002464897800D82FF7 /* ResourcesMH.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResourcesMH.storyboard; sourceTree = "<group>"; };
 		E67B9D41238093880038B6C7 /* Wellness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wellness.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,20 +160,19 @@
 				AABCBD58235F50DB00B759F3 /* ContentView.swift */,
 				AAB6C13B238257A7000DB073 /* lionTip.swift */,
 				AAB6C1392382454C000DB073 /* menuButton.swift */,
-				AAAB3724236E127A00B8B6D8 /* MTHC.swift */,
 				AAB6C13F2382ED28000DB073 /* Profile.swift */,
+				AAAB3724236E127A00B8B6D8 /* MTHC.swift */,
 				AAAB3716236E042500B8B6D8 /* MentalHealth.swift */,
 				AAAB3720236E125300B8B6D8 /* SexualWellness.swift */,
-				E662EFFE2452156A00D82FF7 /* MapView.swift */,
 				AAAB371A236E109400B8B6D8 /* Identity.swift */,
 				AAAB371C236E11F600B8B6D8 /* SubstanceUse.swift */,
 				E67B9D41238093880038B6C7 /* Wellness.swift */,
 				AAAB371E236E123800B8B6D8 /* TimeManagement.swift */,
 				AAAB37122369BD2000B8B6D8 /* ContactView.swift */,
 				AAB6C13D23825E50000DB073 /* Contact.swift */,
+				E662EFFE2452156A00D82FF7 /* MapView.swift */,
 				AABCBD5A235F50E300B759F3 /* Assets.xcassets */,
 				AABCBD5F235F50E300B759F3 /* LaunchScreen.storyboard */,
-				E662F0002464897800D82FF7 /* ResourcesMH.storyboard */,
 				AABCBD62235F50E300B759F3 /* Info.plist */,
 				AABCBD5C235F50E300B759F3 /* Preview Content */,
 			);
@@ -320,7 +317,6 @@
 				CB10CEDB246DBF7800678C72 /* Meet_Connie_Morse.mp4 in Resources */,
 				CB10CEDC246DBF7800678C72 /* Meet_Jean_Banville.mp4 in Resources */,
 				AABCBD61235F50E300B759F3 /* LaunchScreen.storyboard in Resources */,
-				E662F0012464897800D82FF7 /* ResourcesMH.storyboard in Resources */,
 				AABCBD5E235F50E300B759F3 /* Preview Assets.xcassets in Resources */,
 				AABCBD5B235F50E300B759F3 /* Assets.xcassets in Resources */,
 			);
