@@ -5,6 +5,9 @@ struct ContentView: View {
 
     @State private var selection = 0
 	
+	init() {
+        UINavigationBar.appearance().backgroundColor = .red
+    }
 	
     var body: some View {
 		//NavigationView sets up the navigation hierarchy and allows us to use links to other pages
