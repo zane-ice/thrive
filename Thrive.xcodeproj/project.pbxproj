@@ -37,8 +37,8 @@
 		CB10CEE2246DC2D800678C72 /* teleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB10CEE1246DC2D800678C72 /* teleButton.swift */; };
 		E662EFFF2452156A00D82FF7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E662EFFE2452156A00D82FF7 /* MapView.swift */; };
 		E67B9D42238093880038B6C7 /* Wellness.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67B9D41238093880038B6C7 /* Wellness.swift */; };
-		E68DFBBB24787EC200606627 /* bulletText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68DFBBA24787EC200606627 /* bulletText.swift */; };
-		E68DFBBD24787EDF00606627 /* MentalHealth.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68DFBBC24787EDF00606627 /* MentalHealth.swift */; };
+		E68DFBBF247880AA00606627 /* bulletText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68DFBBE247880AA00606627 /* bulletText.swift */; };
+		E68DFBC32478811700606627 /* MentalHealth.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68DFBC22478811700606627 /* MentalHealth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,8 +95,8 @@
 		CB10CEE1246DC2D800678C72 /* teleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teleButton.swift; sourceTree = "<group>"; };
 		E662EFFE2452156A00D82FF7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		E67B9D41238093880038B6C7 /* Wellness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wellness.swift; sourceTree = "<group>"; };
-		E68DFBBA24787EC200606627 /* bulletText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = bulletText.swift; path = ../../../../../../Downloads/bulletText.swift; sourceTree = "<group>"; };
-		E68DFBBC24787EDF00606627 /* MentalHealth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MentalHealth.swift; path = ../../../../../../Downloads/MentalHealth.swift; sourceTree = "<group>"; };
+		E68DFBBE247880AA00606627 /* bulletText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bulletText.swift; sourceTree = "<group>"; };
+		E68DFBC22478811700606627 /* MentalHealth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,9 +154,8 @@
 		AABCBD53235F50DB00B759F3 /* Thrive */ = {
 			isa = PBXGroup;
 			children = (
-				E68DFBBC24787EDF00606627 /* MentalHealth.swift */,
-				E68DFBBA24787EC200606627 /* bulletText.swift */,
 				CB10CEDF246DC09E00678C72 /* player.swift */,
+				E68DFBBE247880AA00606627 /* bulletText.swift */,
 				CB10CEE1246DC2D800678C72 /* teleButton.swift */,
 				AABCBD54235F50DB00B759F3 /* AppDelegate.swift */,
 				AABCBD56235F50DB00B759F3 /* SceneDelegate.swift */,
@@ -166,6 +165,7 @@
 				AAB6C1392382454C000DB073 /* menuButton.swift */,
 				AAB6C13F2382ED28000DB073 /* Profile.swift */,
 				AAAB3724236E127A00B8B6D8 /* MTHC.swift */,
+				E68DFBC22478811700606627 /* MentalHealth.swift */,
 				AAAB3720236E125300B8B6D8 /* SexualWellness.swift */,
 				AAAB371A236E109400B8B6D8 /* Identity.swift */,
 				AAAB371C236E11F600B8B6D8 /* SubstanceUse.swift */,
@@ -354,7 +354,7 @@
 				CB10CEE0246DC09E00678C72 /* player.swift in Sources */,
 				CB095EB12383A28200ACF3AF /* infoButton.swift in Sources */,
 				AABCBD55235F50DB00B759F3 /* AppDelegate.swift in Sources */,
-				E68DFBBD24787EDF00606627 /* MentalHealth.swift in Sources */,
+				E68DFBC32478811700606627 /* MentalHealth.swift in Sources */,
 				AABCBD57235F50DB00B759F3 /* SceneDelegate.swift in Sources */,
 				AABCBD59235F50DB00B759F3 /* ContentView.swift in Sources */,
 				AAAB371D236E11F600B8B6D8 /* SubstanceUse.swift in Sources */,
@@ -362,9 +362,9 @@
 				AAAB3725236E127A00B8B6D8 /* MTHC.swift in Sources */,
 				AAB6C13C238257A7000DB073 /* lionTip.swift in Sources */,
 				AAAB37132369BD2000B8B6D8 /* ContactView.swift in Sources */,
-				E68DFBBB24787EC200606627 /* bulletText.swift in Sources */,
 				AAAB371B236E109400B8B6D8 /* Identity.swift in Sources */,
 				E67B9D42238093880038B6C7 /* Wellness.swift in Sources */,
+				E68DFBBF247880AA00606627 /* bulletText.swift in Sources */,
 				AAAB3721236E125300B8B6D8 /* SexualWellness.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
