@@ -121,7 +121,7 @@ struct PanicView: View {
         .offset(y: 30)
         .padding(15)
     }
-}
+}   
 
 struct MentalHealth_Previews: PreviewProvider {
     static var previews: some View {

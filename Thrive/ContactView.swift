@@ -12,11 +12,7 @@ struct ContactView: View {
                 Contact(name: "Adam Hernandez", email: "aehernandez@exeter.edu", title: "Director of Athletic Training")
                 Contact(name: "Stephanie Bramlett", email: "sbramlett@exeter.edu", title: "Director of Equity and Inclusion")
                 Contact(name: "Nancy Thompson", email: "nthompson@exeter.edu", title: "Director of Nursing")
-                Contact(name: "Heidilee Heath", email: "hheath1@exeter.edu", title: "Interim Director of Religious and Spiritual Life")
-
-                
-                
-                
+                Contact(name: "Heidilee Heath", email: "hheath1@exeter.edu", title: "Interim Director of Religious and Spiritual Life")   
         }.navigationBarTitle("People to Email", displayMode: .inline) //navigation title
     
 }
