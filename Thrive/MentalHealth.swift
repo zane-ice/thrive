@@ -97,7 +97,6 @@ struct CampusView: View {
                 Text("Contact")
             }
             Text("From Dr. Thurber, Lamont Health Center")
-            Text("Off-Campus Support").fontWeight(.bold).foregroundColor(Color.red)
             Text("Credit to Phillips Exeter Academy").italic()
         }
         }.navigationBarTitle("Resources for PEA Students", displayMode: .inline)
