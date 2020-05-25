@@ -36,6 +36,9 @@ struct HelpingAFriendView: View {
     var body: some View {
         ScrollView{
             VStack(alignment: .leading, spacing: 10) {
+                Text("Risk Factors for Suicide:").fontWeight(.bold).foregroundColor(Color.red)
+                Text("Not all people with risk factors will be suicidal. In addition to depression or other mental illness, risk factors for suicide include: \n \u{2022} Current or past history of substance abuse  \n \u{2022} Past history of suicide attempt  \n \u{2022} Family history of suicide  \n \u{2022} Family history of mental illness or substance abuse  \n \u{2022} Firearms in the home  \n \u{2022} Incarceration  \n \u{2022} Feelings of hopelessness")
+                Text("Credit to WebMD").italic()
                 Text("Symptoms to Look For: ").fontWeight(.bold).foregroundColor(Color.red)
                 Text("Depression:").bold()
                 Text("\u{2022} Withdrawal from friends and family \n \u{2022} Feeling discouraged, hopeless about the future \n \u{2022} Missing work, school or appointments \n \u{2022} Difficulty concentrating \n \u{2022} Apathy or losing interest in activities, people or things once enjoyed \n \u{2022} Difficulty sleeping, or wanting to sleep all the time \n \u{2022} Not eating enough, or eating too much")
@@ -58,13 +61,16 @@ struct DisordersView: View {
                 Text("People with anxiety disorders respond to certain objects or situations with fear and dread, as well as with physical signs of anxiety or panic, such as a rapid heartbeat and sweating. An anxiety disorder is diagnosed if the person's response is not appropriate for the situation, if the person cannot control the response, or if the anxiety interferes with normal functioning. Anxiety disorders include generalized anxiety disorder, panic disorder, social anxiety disorder, and specific phobias.")
                 Text("Mood disorders:").bold().foregroundColor(Color.red)
                 Text("These disorders, also called affective disorders, involve persistent feelings of sadness or periods of feeling overly happy, or fluctuations from extreme happiness to extreme sadness. The most common mood disorders are depression, bipolar disorder, and cyclothymic disorder.")
+                NavigationLink(destination: Depression()) {
+                    Text("Learn More About Depression")
+                }
                 Text("Psychotic disorders:").bold().foregroundColor(Color.red)
                 Text("Psychotic disorders involve distorted awareness and thinking. Two of the most common symptoms of psychotic disorders are hallucinations -- the experience of images or sounds that are not real, such as hearing voices -- and delusions, which are false fixed beliefs that the ill person accepts as true, despite evidence to the contrary. Schizophrenia is an example of a psychotic disorder.")
                 Text("Eating disorders:").bold().foregroundColor(Color.red)
-                Text("Eating disorders involve extreme emotions, attitudes, and behaviors involving weight and food. Anorexia nervosa, bulimia nervosa, and binge eating disorder are the most common eating disorders.")
-                Text("Impulse control and addiction disorders: \n").bold().foregroundColor(Color.red)
+                Text("Eating disorders involve extreme emotions, attitudes, and behaviors involving weight and food. Anorexia nervosa, bulimia nervosa, and binge eating disorder are the most common eating disorders. \n")
             }
             VStack(alignment: .leading, spacing: 10) {
+                Text("Impulse control and addiction disorders:").bold().foregroundColor(Color.red)
                 Text("People with impulse control disorders are unable to resist urges, or impulses, to perform acts that could be harmful to themselves or others. Pyromania (starting fires), kleptomania (stealing), and compulsive gambling are examples of impulse control disorders. Alcohol and drug are common objects of addictions. Often, people with these disorders become so involved with the objects of their addiction that they begin to ignore responsibilities and relationships.")
                 Text("Personality disorders:").bold().foregroundColor(Color.red)
                 Text("People with personality disorders have extreme and inflexible personality traits that are distressing to the person and/or cause problems in work, school, or social relationships. In addition, the person's patterns of thinking and behavior significantly differ from the expectations of society and are so rigid that they interfere with the person's normal functioning. Examples include antisocial personality disorder, obsessive-compulsive personality disorder, and paranoid personality disorder.")
@@ -78,6 +84,22 @@ struct DisordersView: View {
         .offset(y: 30)
         .padding(15)
     }
+}
+
+struct Depression: View {
+    var body: some View {
+        ScrollView{
+            VStack (alignment: .leading, spacing: 10){
+                Text("About Depression:").bold().foregroundColor(Color.red)
+                Text("Depression is a common but serious disease that ranges widely in severity. If you have a milder case, you may struggle with symptoms that include sadness, irritability, anger, and fatigue that last for weeks or longer. Such depression interferes with your daily life and relationships. \n But some cases of depression are more severe, with intense symptoms that may include significant appetitie and weight loss, sleep problems, and frequent thoughts of death or suicide. Such depression can be paralyzing. You may isolate yourself and have trouble getting out of bed or leaving the house.")
+                Text("Symptoms of Severe Depression:").bold().foregroundColor(Color.red)
+                Text("\u{2022} Insomnia or excessive sleeping \n \u{2022} Irritability \n \u{2022} Loss of interest in activities that used to be enjoyable \n \u{2022} Hopelessness \n \u{2022} Persistent thoughts of something bad happening \n \u{2022} Thoughts of death or suicide or suicide attempts \n \u{2022} In very severe cases, psychotic symptoms (such as hallucinations or delusions) \n \u{2022} Inability to take care of oneself, such as eating, bathing, or fulfilling family or work responsibilities \n \n Although you might feel that there's no hope, talk to your doctor about treatment options. Even severe depression symptoms can be treated.")
+                Text("Credit to WebMD").italic()
+            }
+        }.navigationBarTitle("Depression", displayMode: .inline)
+        .offset(y: 30)
+        .padding(15)
+        }
 }
 
 struct CampusView: View {
