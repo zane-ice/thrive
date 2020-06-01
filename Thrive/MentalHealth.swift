@@ -142,14 +142,27 @@ struct CampusView: View {
                     Text("Contact")
                 }
                 Text("Credit to Phillips Exeter Academy").italic()
-                Text("Off-Campus Support").fontWeight(.bold).foregroundColor(Color.red)
+                Text("Off-Campus Support").bold().foregroundColor(Color.red)
                 Text("Seacoast Medical Center \n").bold()
             }
             VStack(alignment: .leading, spacing: 10) {
                 Text("Seacoast Mental Health Center provides comprehensive mental health services to children, adolescents, adults and their families. Depending on the clinical diagnosis, severity of impairment and age of the client, available services range from 24 hour emergency services to individual and group therapy, couples and family therapy, substance use disorder treatment, psychiatric services, psychological and neurological assessment and testing, to home and community-based services, residential care, case management and employment support services.")
                 NavigationLink(destination: Seacoast()){
-                    Text("Learn more about Seacoast")
+                    Text("Learn more about Seacoast \n")
                 }
+            }
+            VStack(alignment: .leading, spacing: 10) {
+                Text("Depression Hotlines:").bold()
+                NavigationLink(destination: DepressionHotlines()){
+                    Text("Learn more about Depression Hotlines")
+                }
+                Text("The following is a list of national depression hotlines that are staffed 24/7.")
+                Text("\u{2022} National Suicide Prevention Line:")
+                teleButton(text: "1-800-273-8255")
+                Text("\u{2022} Hopeline:")
+                teleButton(text: "1-877-235-4525")
+                Text("\u{2022} Substance Abuse and Mental Health Services Administration (SAMHSA):")
+                teleButton(text: "1-800-662-4357")
             }
         }.navigationBarTitle("Resources for PEA Students", displayMode: .inline)
         .offset(y: 30)
@@ -172,12 +185,35 @@ struct Seacoast: View {
             teleButton(text: "603-431-6703")
             Image("SeacoastPortsmouth").resizable().scaledToFit()
         }
+        VStack(alignment: .leading, spacing: 10) {
+            Text("\nCredit to Seacoast Mental Health Center").italic()
+        }
         }.navigationBarTitle("Seacoast Mental Health Center", displayMode: .inline)
         .offset(y: 30)
         .padding(15)
     }
 }
 
+struct DepressionHotlines: View {
+    var body: some View {
+        ScrollView{
+        VStack(alignment: .leading, spacing: 10) {
+            Image("DepressionHotline").resizable().scaledToFit()
+            Text("What Is A Depression Hotline Number?").fontWeight(.bold).foregroundColor(Color.red)
+            Text("A depression hotline number is a phone number you can reach to get help with depression. Many people think that depression hotlines are only helpful in crisis situations, but this isn't necessarily the case. While those who are feeling suicidal or wanting to cause harm to others are encouraged to call depression hotlines, the service can often offer more than immediate crisis management. \n\nDepression hotline agents answer mental health questions, provide information for local resources and help callers access care. Many hotlines are available 24 hours a day, 7 days a week. Calls are typically routed to national or local agencies that are staffed with volunteers who have received special training to answer questions and diffuse urgent situations.\n\nMany people call depression hotlines. However, today's technology offers many convenient ways to get in touch with help. Depression hotlines often offer text messaging, email or chat services. This is especially helpful for those who do not feel comfortable discussing their depression over the phone or for those who do not feel like they have enough privacy to engage in such a conversation.\n\nOne important thing to know about depression hotlines is that services are almost always confidential and free. This means that what you tell the person on the other end of the line stays between you and the agent. You are also not charged any fees for services. Most depression hotlines are run by non-profit agencies who make it their mission to help people no matter who they are, where they are or what their income is.\n\nMany people worry that if they call a helpline, local emergency services will be contacted (especially if someone reports they are experiencing suicidal thoughts). If someone says that they are feeling suicidal or wanting to harm themselves, the agent may encourage the person to seek emergency medical assistance depending on the level of risk. The agent may contact the authorities on behalf of the caller if the caller requests. However, the only time an agent would contact emergency services without permission is if the caller is actively threatening to harm themselves or others.")
+            Text("Who Can Call A Depression Hotline Number?").fontWeight(.bold).foregroundColor(Color.red)
+            Text("While many people who reach out to depression hotlines are those who are experiencing depression, anyone can call. This means that friends and family members who want to learn more about depression or who are worried about someone they love can get help too. The service is available to anyone with questions or concerns about the condition.\n\nBecause services are free, it doesn't matter if a caller has insurance or not. Confidentiality also means that services are available to all ages and genders. If you identify with a special group such as LGBTQ individuals, veterans or substance users, you may find depression hotline numbers that are targeted to your specific needs.")
+            Text("What Happens After You Dial?").fontWeight(.bold).foregroundColor(Color.red)
+            Text("Once you dial a depression hotline number or enter into a chat, text or email conversation, you can expect a few different things. Unfortunately, because most agencies are staffed by volunteers, there may be a limited number of agents able to receive calls. It is not unusual to have to wait on hold or have a bit of a delay before someone interacts with you. In these situations, try not to leave the queue. If you lose your spot, you will be moved to the end of the line if you try to make contact again.\n\nOnce you reach an agent, they may share their name or operator number. They may quickly ask questions like 'Are you safe?' or 'Are you having thoughts of harming yourself or others?' These questions allow the agent to quickly assess the situation and decide what level of help you may need. If someone is in danger, they will want to know right away.\n\nAfter initial introductions, the agent will want to know more about your needs. This is where you can share with them your questions or feelings. They may ask to follow-up questions to better understand how to help you or offer support. They may point you toward available resources throughout the conversation.\n\nIf you are experiencing a crisis situation, the volunteer will use techniques to calm you down. They may ask to contact emergency medical services with your permission. Their goal is to defuse the situation and point you in the direction of help in your area. Your safety is their number one priority.")
+            Text("What Happens After The Call Ends?").fontWeight(.bold).foregroundColor(Color.red)
+            Text("Depression hotlines are not meant to be long-term talk therapy solutions, nor can they provide prescriptions or medical assistance over the phone. If it feels like the agent is not meeting all of your needs, it may be because they lack the resources or training to do so. In many cases, these volunteers are simply people who want to help others. They may or may not be licensed medical professionals. While they are equipped with a few techniques to help in urgent situations, they ultimately cannot provide direct care.\n\nOne of the agents' main priorities is providing you with resources to reach out to when you end the conversation. It is important that you follow up with the resources you have been given. While you are free to contact depression hotlines as often as needed, you should work with a doctor or licensed mental health professional for ongoing management of your symptoms.")
+            Text("Credit to betterhelp.com").italic()
+        }
+        }.navigationBarTitle("Depression Hotlines", displayMode: .inline)
+        .offset(y: 30)
+        .padding(15)
+    }
+}
 
 struct PanicView: View {
     var body: some View {
