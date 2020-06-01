@@ -64,12 +64,15 @@ struct DisordersView: View {
                 NavigationLink(destination: Depression()) {
                     Text("Learn More About Depression")
                 }
+                NavigationLink(destination: Bipolar()) {
+                    Text("Learn More About Bipolar Disorder")
+                }
                 Text("Psychotic disorders:").bold().foregroundColor(Color.red)
                 Text("Psychotic disorders involve distorted awareness and thinking. Two of the most common symptoms of psychotic disorders are hallucinations -- the experience of images or sounds that are not real, such as hearing voices -- and delusions, which are false fixed beliefs that the ill person accepts as true, despite evidence to the contrary. Schizophrenia is an example of a psychotic disorder.")
-                Text("Eating disorders:").bold().foregroundColor(Color.red)
-                Text("Eating disorders involve extreme emotions, attitudes, and behaviors involving weight and food. Anorexia nervosa, bulimia nervosa, and binge eating disorder are the most common eating disorders. \n")
+                Text("Eating disorders: \n").bold().foregroundColor(Color.red)
             }
             VStack(alignment: .leading, spacing: 10) {
+                Text("Eating disorders involve extreme emotions, attitudes, and behaviors involving weight and food. Anorexia nervosa, bulimia nervosa, and binge eating disorder are the most common eating disorders. \n")
                 Text("Impulse control and addiction disorders:").bold().foregroundColor(Color.red)
                 Text("People with impulse control disorders are unable to resist urges, or impulses, to perform acts that could be harmful to themselves or others. Pyromania (starting fires), kleptomania (stealing), and compulsive gambling are examples of impulse control disorders. Alcohol and drug are common objects of addictions. Often, people with these disorders become so involved with the objects of their addiction that they begin to ignore responsibilities and relationships.")
                 Text("Personality disorders:").bold().foregroundColor(Color.red)
@@ -91,7 +94,7 @@ struct Depression: View {
         ScrollView{
             VStack (alignment: .leading, spacing: 10){
                 Text("About Depression:").bold().foregroundColor(Color.red)
-                Text("Depression is a common but serious disease that ranges widely in severity. If you have a milder case, you may struggle with symptoms that include sadness, irritability, anger, and fatigue that last for weeks or longer. Such depression interferes with your daily life and relationships. \n But some cases of depression are more severe, with intense symptoms that may include significant appetitie and weight loss, sleep problems, and frequent thoughts of death or suicide. Such depression can be paralyzing. You may isolate yourself and have trouble getting out of bed or leaving the house.")
+                Text("Depression is a common but serious disease that ranges widely in severity. If you have a milder case, you may struggle with symptoms that include sadness, irritability, anger, and fatigue that last for weeks or longer. Such depression interferes with your daily life and relationships. \n\nBut some cases of depression are more severe, with intense symptoms that may include significant appetitie and weight loss, sleep problems, and frequent thoughts of death or suicide. Such depression can be paralyzing. You may isolate yourself and have trouble getting out of bed or leaving the house.")
                 Text("Symptoms of Severe Depression:").bold().foregroundColor(Color.red)
                 Text("\u{2022} Insomnia or excessive sleeping \n \u{2022} Irritability \n \u{2022} Loss of interest in activities that used to be enjoyable \n \u{2022} Hopelessness \n \u{2022} Persistent thoughts of something bad happening \n \u{2022} Thoughts of death or suicide or suicide attempts \n \u{2022} In very severe cases, psychotic symptoms (such as hallucinations or delusions) \n \u{2022} Inability to take care of oneself, such as eating, bathing, or fulfilling family or work responsibilities \n \n Although you might feel that there's no hope, talk to your doctor about treatment options. Even severe depression symptoms can be treated.")
                 Text("Credit to WebMD").italic()
@@ -102,30 +105,79 @@ struct Depression: View {
         }
 }
 
+struct Bipolar: View {
+    var body: some View {
+        ScrollView{
+            VStack (alignment: .leading, spacing: 10){
+                Text("About Bipolar Disorder").bold().foregroundColor(Color.red)
+                Text("People with bipolar disorder often have cycles of elevated and depressed mood that fit the description of 'manic depression.' When a person's illness follows this classic pattern, diagnosing bipolar disorder is relatively easy. \n \nBut bipolar disorder can be sneaky. Symptoms can defy the expected manic-depressive sequence. Infrequent episodes of mild mania or hypomania can go undetected. Depression can overshadow other aspects of the illness. And substance abuse, if present, can cloud the picture. Taken together, these factors make bipolar disorder difficult to diagnose when symptoms are not obvious.")
+                Text("A few facts about bipolar disorder you may not know:").bold().foregroundColor(Color.red)
+                Text("\u{2022} As many as 20% of people complaining of depression to their doctor actually have bipolar disorder. \n  \u{2022} About half of people with bipolar disorder have seen three professionals before being diagnosed correctly.  \n \u{2022} It takes an average of 10 years for people to enter treatment for bipolar disorder after symptoms begin. This is caused in part by delays in diagnosis. \n \u{2022} Most people with bipolar disorder have additional psychiatric conditions (such as substance abuse or anxiety) that can make overall diagnoses more challenging.")
+                Text("Bipolar Disorder Is Often Mistaken for 'Just' Depression").bold().foregroundColor(Color.red)
+                Text("People with bipolar disorder are frequently misdiagnosed as having only depression. In bipolar II disorder, the milder form, manic episodes are mild and can pass by unnoticed. Time spent with depression symptoms, meanwhile, outnumbers time spent with hypomanic symptoms by about 35 to one in people with bipolar II disorder. \n\nTime spent with depression symptoms also usually outweighs time spent with mania symptoms in bipolar I disorder by about three to one, although the more severe mania in bipolar I generally is easier to identify. \n\nMajor depressive disorder -- often referred to as unipolar depression -- is different from bipolar disorder II -- also called bipolar depression -- in that unipolar depression has no intervals of hypomania while bipolar II does have intervals of hypomania. \n\nAnyone evaluated for depression should also be evaluated for a lifetime history of manic or hypomanic episodes.")
+                Text("Bipolar Disorder and Substance Abuse Can Go Hand in Hand").bold().foregroundColor(Color.red)
+                Text("Substance abuse often complicates the diagnosis and treatment of bipolar disorder. Substance abuse is bipolar disorder's partner in crime. Some studies show that as many as 60% of people with bipolar disorder also abuse drugs or alcohol. Untreated substance abuse can make it virtually impossible to manage the mood symptoms of bipolar disorder if both disorders are present. It can also be hard to make a confident diagnosis of bipolar disorder when someone is actively abusing substances that cause mood swings. \n\nSubstances such as alcohol and cocaine can also cloud the picture in bipolar disorder. For example, people high on cocaine can appear manic when they're actually intoxicated, or have a depression 'crash' when the drug wears off. Some people with bipolar disorder use drugs and alcohol as a part of the impulsivity and recklessness of mania. Others may have an independent substance use disorder, which requires its own treatment. Substance abuse may make bipolar episodes (mania and depression) more frequent or severe, and medicines used to treat bipolar disorder are usually less effective when someone is using alcohol or illicit drugs.")
+                Text("Credit to WebMD").italic()
+            }
+        }.navigationBarTitle("Bipolar Disorder", displayMode: .inline)
+        .offset(y: 30)
+        .padding(15)
+        }
+}
+
 struct CampusView: View {
     var body: some View {
         ScrollView{
             Image("LamontHealth").resizable().scaledToFit()
             VStack(alignment: .leading, spacing: 10) {
-            Text("On-Campus Support").fontWeight(.bold).foregroundColor(Color.red)
-            Text("Ways to Get Involved:").fontWeight(.bold)
-            Text("\u{2022} Active Minds: Increasing awareness and knowledge about mental health, fundraising and increasing support for mental health and suicide prevention campaigns \n \u{2022} Mental Health Committee, Student Council: Working on multiple avenues around campus to improve and measure mental health on campus \n \u{2022} Psychology Club: Studying the brain and human psychology, including analyzing mental health disorders and human emotions \n \u{2022} Student Mental Health Alliance \n \u{2022} H4: Mental Health and Health Organization")
-            Text("Counseling and Pscyhological Service (CAPS)").fontWeight(.bold)
-            Text("The Counseling and Psychological Service, based in the Lamont Health and Wellness Center pictured above, offer amazing counselors who are more than willing to help with many mental health issues. \n Please refer to the below pages for much more in depth support and assistance:")
-            NavigationLink(destination: MTHC()){
-                Text("Meet the Health Center")
+                Text("On-Campus Support").fontWeight(.bold).foregroundColor(Color.red)
+                Text("Ways to Get Involved:").fontWeight(.bold)
+                Text("\u{2022} Active Minds: Increasing awareness and knowledge about mental health, fundraising and increasing support for mental health and suicide prevention campaigns \n \u{2022} Mental Health Committee, Student Council: Working on multiple avenues around campus to improve and measure mental health on campus \n \u{2022} Psychology Club: Studying the brain and human psychology, including analyzing mental health disorders and human emotions \n \u{2022} Student Mental Health Alliance \n \u{2022} H4: Mental Health and Health Organization")
+                Text("Counseling and Pscyhological Service (CAPS)").fontWeight(.bold)
+                Text("The Counseling and Psychological Service, based in the Lamont Health and Wellness Center pictured above, offer amazing counselors who are more than willing to help with many mental health issues. \n\nPlease refer to the below pages for much more in depth support and assistance:")
+                NavigationLink(destination: MTHC()){
+                    Text("Meet the Health Center")
+                }
+                NavigationLink(destination: ContactView()){
+                    Text("Contact")
+                }
+                Text("Credit to Phillips Exeter Academy").italic()
+                Text("Off-Campus Support").fontWeight(.bold).foregroundColor(Color.red)
+                Text("Seacoast Medical Center \n").bold()
             }
-            NavigationLink(destination: ContactView()){
-                Text("Contact")
+            VStack(alignment: .leading, spacing: 10) {
+                Text("Seacoast Mental Health Center provides comprehensive mental health services to children, adolescents, adults and their families. Depending on the clinical diagnosis, severity of impairment and age of the client, available services range from 24 hour emergency services to individual and group therapy, couples and family therapy, substance use disorder treatment, psychiatric services, psychological and neurological assessment and testing, to home and community-based services, residential care, case management and employment support services.")
+                NavigationLink(destination: Seacoast()){
+                    Text("Learn more about Seacoast")
+                }
             }
-            Text("From Dr. Thurber, Lamont Health Center")
-            Text("Credit to Phillips Exeter Academy").italic()
-        }
         }.navigationBarTitle("Resources for PEA Students", displayMode: .inline)
         .offset(y: 30)
         .padding(15)
     }
 }
+
+struct Seacoast: View {
+    var body: some View {
+        ScrollView{
+        VStack(alignment: .leading, spacing: 10) {
+            Text("About Seacoast Mental Health Center:").fontWeight(.bold).foregroundColor(Color.red)
+            Text("All our services are designed to help the client manage their symptoms so that they can lead more productive lives in their own community. Consultation and educational services are also available to community organizations and businesses. Services offered include: \n \n \u{2022} Emergency services \n \u{2022} Psychiatric services \n \u{2022} Adult services \n \u{2022} Child, adolescent, and family services \n \u{2022} Child impact program \n \u{2022} Substance use disorder treatment \n \u{2022} Community collaborations \n \u{2022} Mental health first aid")
+            Text("Contact").fontWeight(.bold).foregroundColor(Color.red)
+            Text("Seacoast Mental Health Center has offices in Portsmouth and Exeter, NH. Their general business hours are Monday-Thursday, 8:00am-8:00pm and Friday 8:00am-5:00pm. Emergency Services are available 24/7.")
+            Text("Exeter Office:").bold()
+            teleButton(text: "603.772.2710")
+            Image("SeacoastExeter").resizable().scaledToFit()
+            Text("Portsmouth Office:").bold()
+            teleButton(text: "603-431-6703")
+            Image("SeacoastPortsmouth").resizable().scaledToFit()
+        }
+        }.navigationBarTitle("Seacoast Mental Health Center", displayMode: .inline)
+        .offset(y: 30)
+        .padding(15)
+    }
+}
+
 
 struct PanicView: View {
     var body: some View {
