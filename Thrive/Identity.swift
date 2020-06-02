@@ -106,7 +106,7 @@ struct resourcesI: View {
     var body: some View {
         ScrollView{
         VStack (alignment: .leading, spacing: 10) {
-            Text("LGTBQ+ Affinity Groups").bold().foregroundColor(Color.red)
+            Text("LGTBQ+ Affinity Groups: ").bold().foregroundColor(Color.red)
             Text("\u{2022} Queer Umbrella Group: Ms. Lembo, jlembo@exeter.edu or Mr. Myers, amyers@exeter.edu")
             Text("\u{2022} Lesbian/Queer Women Affinity Group: Ms. Lembo, jlembo@exeter.edu or Rev. Heidi, hheath1@exeter.edu")
             Text("\u{2022} Gay Male Affinity Group: Ms. Lembo: jlembo@exeter.edu (temporarily)")
@@ -114,7 +114,7 @@ struct resourcesI: View {
             Text("\u{2022} Transgender Affinity Group: Mr. Myers: amyers@exeter.edu or Dr. Heath: ecarringtonheath@mac.com")
             Text("\u{2022} Queer Kids of Color: Mr. Walker: jwalker2@exeter.edu")
         }
-        }.navigationBarTitle("Resources for PEA Students", displayMode: .inline).offset(y: 30).offset(y: 30)
+        }.navigationBarTitle("Resources for PEA Students", displayMode: .inline)
         .padding(15)
     }
 }
