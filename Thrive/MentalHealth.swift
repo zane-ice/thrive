@@ -38,7 +38,7 @@ struct HelpingAFriendView: View {
             VStack(alignment: .leading, spacing: 10) {
                 Text("Risk Factors for Suicide:").fontWeight(.bold).foregroundColor(Color.red)
                 Text("Not all people with risk factors will be suicidal. In addition to depression or other mental illness, risk factors for suicide include: \n \u{2022} Current or past history of substance abuse  \n \u{2022} Past history of suicide attempt  \n \u{2022} Family history of suicide  \n \u{2022} Family history of mental illness or substance abuse  \n \u{2022} Firearms in the home  \n \u{2022} Incarceration  \n \u{2022} Feelings of hopelessness")
-                Text("Credit to WebMD").italic()
+                Text("Credit to WebMD\n").italic()
                 Text("Symptoms to Look For: ").fontWeight(.bold).foregroundColor(Color.red)
                 Text("Depression:").bold()
                 Text("\u{2022} Withdrawal from friends and family \n \u{2022} Feeling discouraged, hopeless about the future \n \u{2022} Missing work, school or appointments \n \u{2022} Difficulty concentrating \n \u{2022} Apathy or losing interest in activities, people or things once enjoyed \n \u{2022} Difficulty sleeping, or wanting to sleep all the time \n \u{2022} Not eating enough, or eating too much")
@@ -141,11 +141,11 @@ struct CampusView: View {
                 NavigationLink(destination: ContactView()){
                     Text("Contact")
                 }
-                Text("Credit to Phillips Exeter Academy").italic()
-                Text("Off-Campus Support").bold().foregroundColor(Color.red)
-                Text("Seacoast Medical Center \n").bold()
+                Text("Credit to Phillips Exeter Academy\n").font(.body).italic().padding(15)
             }
             VStack(alignment: .leading, spacing: 10) {
+                Text("Off-Campus Support").bold().foregroundColor(Color.red)
+                Text("Seacoast Medical Center \n").bold()
                 Text("Seacoast Mental Health Center provides comprehensive mental health services to children, adolescents, adults and their families. Depending on the clinical diagnosis, severity of impairment and age of the client, available services range from 24 hour emergency services to individual and group therapy, couples and family therapy, substance use disorder treatment, psychiatric services, psychological and neurological assessment and testing, to home and community-based services, residential care, case management and employment support services.")
                 NavigationLink(destination: Seacoast()){
                     Text("Learn more about Seacoast \n")
