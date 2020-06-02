@@ -21,8 +21,10 @@ struct genSupport: View {
                 NavigationLink(destination: genHelp()){
                     infoButton(text: "Support")
                 }
-                Text("\n Phillips Exeter Academy is a diverse educational community that seeks to provide a safe, supportive space for students to express their identity with authenticity and integrity in both policy and practice.")
-                Text("Credit to Phillips Exeter Academy").italic()
+            }
+            VStack (alignment: .leading, spacing: 10){
+                Text("\n Phillips Exeter Academy is a diverse educational community that seeks to provide a safe, supportive space for students to express their identity with authenticity and integrity in both policy and practice.").padding(15)
+                Text("Credit to Phillips Exeter Academy").font(.body).italic().padding(15)
             }
         }.navigationBarTitle("Gender Support Plan", displayMode: .inline).offset(y: 30)
     }
