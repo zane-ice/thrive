@@ -116,7 +116,7 @@ extension SexualWellness{
                 }
                 VStack(alignment: .leading, spacing: 10) {
                     Text("Directions:").bold().foregroundColor(Color.red)
-                    Text("About a 10 minute walk from PEA campus")
+                    Text("108 High St, Exeter, NH 03833 \n\nAbout a 10 minute walk from PEA campus")
                     MapView().frame(height: 300)
                     Text("Credit to Planned Parenthood").font(.body).italic().padding(15)
                 }
@@ -214,5 +214,6 @@ struct SexualWellness_Previews: PreviewProvider {
         SexualWellness()
     }
 }
+
 
 
