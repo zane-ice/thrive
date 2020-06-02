@@ -13,13 +13,17 @@ struct Resources: View {
         ScrollView{
             VStack(alignment: .leading, spacing: 10) {
                 Text("On-Campus Support").bold().foregroundColor(Color.red)
+                Text("\u{2022} Wellness is often correlated to other aspects of mental and physical health and of teenage life. Please refer to the resource tab of other pages if you feel they may help.")
+                Text("\u{2022} Exeter CAPS:")
                 Button("http://bit.ly/PEAreport") {UIApplication.shared.open(URL(string: "https://phillipsexeteracademy.sharepoint.com/sites/ec-caps/SitePages/Make-an-Appointment.aspx")!)}
-                Text("Credit to Phillips Exeter Academy \n").italic()
+                Text("Credit to Phillips Exeter Academy").italic()
                 Text("Off-Campus Support").bold().foregroundColor(Color.red)
-                Text("Credit to www.drug-rehabs.org").italic()
+                Text("\u{2022} Exeter Power Yoga:")
+                Button("https://www.exeterpoweryoga.com/") {UIApplication.shared.open(URL(string: "https://www.exeterpoweryoga.com/")!)}
             }
         }.navigationBarTitle("Resources for PEA Students", displayMode: .inline)
         .offset(y: 30)
+        .padding(15)
     }
 }
 
