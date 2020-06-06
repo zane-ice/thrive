@@ -15,32 +15,32 @@ extension SexualWellness{
             ScrollView{
                 VStack(alignment: .leading, spacing: 10) {
                     Text("Why should I be concerned about it?").fontWeight(.bold).foregroundColor(Color.red)
-                    Text("\u{2022} Protects people you care about and yourself \n \u{2022} Affirms your values \n \u{2022} Helps you worry less \n \u{2022} You’ll have more fun \n \u{2022} Impress others")
-                    Text("Sexually Responsible Behaviors").fontWeight(.bold).foregroundColor(Color.red)
+                    Text("\u{2022} Protects people you care about and yourself \n\u{2022} Affirms your values \n\u{2022} Helps you worry less \n\u{2022} You’ll have more fun \n\u{2022} Impress others")
+                    Text("\nSexually Responsible Behaviors").fontWeight(.bold).foregroundColor(Color.red)
                     Text("1. Stay informed").bold()
-                    Text("\t a. Keep up-to-date on birth control, condoms, STDs, social issues, legal issues \n \t b. Read websites and articles")
+                    Text("a. Keep up-to-date on birth control, condoms, STDs, social issues, legal issues \nb. Read websites and articles")
                     Text("2. Think").bold()
-                    Text("\t a. Make informed decisions ahead of time \n \t b. Set some goals \n \t c. What do you want to do in the future?\n \t d. How would an STD or pregnancy affect your plans?\n \t e. Is a sexual relationship the right thing for you right now?\n \t What kind of birth control makes sense?")
+                    Text("a. Make informed decisions ahead of time \nb. Set some goals \nc. What do you want to do in the future?\nd. How would an STD or pregnancy affect your plans?\ne. Is a sexual relationship the right thing for you right now?\nf. What kind of birth control makes sense?")
                     Text("3. Get to know the relationship between your brain and your body").bold()
-                    Text("\t a. It’s hard to overcome our animal instinct for sexual behavior \n \t b. Important to stay in touch with your thinking part of the brain")
+                    Text("a. It’s hard to overcome our animal instinct for sexual behavior \nb. Important to stay in touch with your thinking part of the brain\n")
                 }
                 VStack(alignment: .leading, spacing: 10) {
                     Text("4. Communicate with your partner").bold()
-                    Text("\t a. What are his plans for the future?\n \t b. Conversations about STD and pregnancy prevention\n \t c. Thoughtful conversations in non-sexual situations are ideal")
+                    Text("a. What are his plans for the future?\nb. Conversations about STD and pregnancy prevention\nc. Thoughtful conversations in non-sexual situations are ideal")
                     Text("5. Get friendly with condoms").bold()
-                    Text("\t a. Practice putting them on before you have sex\n \t b. Blow them up, fill them with water, unroll them onto something. Get a good feel for how condoms handle.")
+                    Text("a. Practice putting them on before you have sex\nb. Blow them up, fill them with water, unroll them onto something. Get a good feel for how condoms handle.")
                     Text("6. Learn the difference between “yes” and “no”").bold()
-                    Text("\t a. Any “yes” should be absolute and certain\n \t b. Learn to communicate clearly with your voice, look, attitude, and behavior.")
+                    Text("a. Any “yes” should be absolute and certain\nb. Learn to communicate clearly with your voice, look, attitude, and behavior.")
                     Text("7. Chill on the mind-altering substances").bold()
-                    Text("\t a. Drugs and alcohol weaken your resolve and make it harder to use a condom.")
+                    Text("a. Drugs and alcohol weaken your resolve and make it harder to use a condom.\n")
                 }
                 VStack(alignment: .leading, spacing: 10) {
                     Text("8. Be creative").bold()
-                    Text("\t a. There are many way to experience sexuality besides having sex. \n \t b. Expand your notion of what sex is by trying activites like foot massages or eating strawberries dipped in chocolate.")
+                    Text("a. There are many way to experience sexuality besides having sex. \nb. Expand your notion of what sex is by trying activites like foot massages or eating strawberries dipped in chocolate.")
                     Text("9. Stay healthy, be happy").bold()
-                    Text("\t a. Sex (and making responsible decisions) works better when you’re fit, happy, and not too tired. \n \t b. Enjoy every minute you can.")
-                    Text("Summary of Guidelines for Sexual Partners").fontWeight(.bold).foregroundColor(Color.red)
-                    Text("\u{2022} Have consent \n \u{2022} Never use pressure to get consent \n \u{2022} Be honest with each other \n \u{2022} Be attentive to each other’s pleasure \n \u{2022} Guard against unintended pregnancy and STDs \n \u{2022} Respect each other’s limits ")
+                    Text("a. Sex (and making responsible decisions) works better when you’re fit, happy, and not too tired. \nb. Enjoy every minute you can.")
+                    Text("\nSummary of Guidelines for Sexual Partners").fontWeight(.bold).foregroundColor(Color.red)
+                    Text("\u{2022} Have consent \n\u{2022} Never use pressure to get consent \n\u{2022} Be honest with each other \n\u{2022} Be attentive to each other’s pleasure \n\u{2022} Guard against unintended pregnancy and STDs \n\u{2022} Respect each other’s limits ")
                     Text("Credit to ETR Associates and Marcia Quackenbush, MS, MFT, CHES").italic()
                 }
             }.navigationBarTitle("Sexually Responsible Behavior", displayMode: .inline)
@@ -112,13 +112,13 @@ extension SexualWellness{
                     Text("To make an appointment please call:")
                     teleButton(text: "603-772-9315")
                     Text("Services Offered:").bold().foregroundColor(Color.red)
-                    Text("\u{2022} Abortion Referrals \n \u{2022} Birth Control \n \u{2022} General Health Care \n \u{2022} HIV Testing \n \u{2022} LGBTQ Services \n \u{2022} Men's Health Care \n \u{2022} Morning-After Pill (Emergency Contrapception) \n \u{2022} Pregnancy Testing & Services \n \u{2022} STD Testing, Treatment & Vaccines \n \u{2022} Women's Health Care \n")
+                    Text("\u{2022} Abortion Referrals \n\u{2022} Birth Control \n\u{2022} General Health Care \n\u{2022} HIV Testing \n\u{2022} LGBTQ Services \n\u{2022} Men's Health Care \n\u{2022} Morning-After Pill (Emergency Contrapception) \n\u{2022} Pregnancy Testing & Services \n\u{2022} STD Testing, Treatment & Vaccines \n\u{2022} Women's Health Care \n")
                 }
                 VStack(alignment: .leading, spacing: 10) {
                     Text("Directions:").bold().foregroundColor(Color.red)
-                    Text("108 High St, Exeter, NH 03833 \n\nAbout a 10 minute walk from PEA campus")
+                    Text("108 High St, Exeter, NH 03833\nAbout a 10 minute walk from PEA campus")
                     MapView().frame(height: 300)
-                    Text("Credit to Planned Parenthood").font(.body).italic().padding(15)
+                    Text("Credit to Planned Parenthood").italic()
                 }
             }.navigationBarTitle("Planned Parenthood", displayMode: .inline)
             .offset(y: 30)
@@ -135,48 +135,56 @@ extension SexualWellness{
                  VStack(alignment: .leading, spacing: 10) {
                     Text("On-Campus Support").bold().foregroundColor(Color.red)
                     //Text("\u{2022} 24-hour on-call Counselor:")
-                    Text("\u{2022} 24-hour on-call Dean’s Office and Campus Security: ")
+                    Text("24-hour on-call Dean’s Office and Campus Security:").bold()
                     teleButton(text: "603-777-3420")
-                    Text("\u{2022} Director of Student Safety and Wellbeing: Christina D. Palmer")
+                    Text("Director of Student Safety and Wellbeing:").bold()
+                    Text("Christina D. Palmer, cdpalmer@exeter.edu")
                     teleButton(text: "603-929-9598")
-                    Text("cdpalmer@exeter.edu \n \u{2022} PEA Counselors \n \t \u{2022} Chris Thurber, Ph.D.")
+                    Text("PEA Counselors:").bold()
+                    Text("\u{2022} Chris Thurber, Ph.D., cthurber@exeter.edu")
                     teleButton(text: "603-777-3528")
-                    Text("cthurber@exeter.edu  \n \t \u{2022} Connie Morse, LICSW")
+                    Text("\u{2022} Connie Morse, LICSW, cmorse@exeter.edu")
+                }
+                VStack(alignment: .leading, spacing: 10) {
                     teleButton(text: "603-777-3431")
-                }
-                VStack(alignment: .leading, spacing: 10) {
-                    Text("cmorse@exeter.edu \n \t \u{2022} Szu-Hui Lee, Ph.D.")
+                    Text("\u{2022} Szu-Hui Lee, Ph.D., slee@exeter.edu")
                     teleButton(text: "603-777-3532")
-                    Text("slee@exeter.edu  \n \u{2022} PEA Contracted Psychiatrist: Emad Milad, M.D. PEA: ")
+                    Text("PEA Contracted Psychiatrist:").bold()
+                    Text("Emad Milad, M.D., emilad@exeter.edu\n\u{2022} PEA Number: ")
                     teleButton(text: "603-777-3420")
-                    Text("(Wednesdays), Hampstead Hospital: ")
+                    Text("\u{2022} (On Wednesdays), Hampstead Hospital: ")
                     teleButton(text: "603-436-0600")
-                    Text("emilad@exeter.edu \n \u{2022} Ethics Point: PEA Confidential Misconduct Reporting Site:")
+                    Text("PEA Confidential Misconduct Reporting Site:").bold()
                     Button("http://bit.ly/PEAreport") {UIApplication.shared.open(URL(string: "http://bit.ly/PEAreport")!)}
-                    Text("Off-Campus Support").bold().foregroundColor(Color.red)
-                    Text("\u{2022} Community Counselors \n \t \u{2022} Andrew Nathan, Psy D.")
                 }
                 VStack(alignment: .leading, spacing: 10) {
+                    Image("img1").resizable().aspectRatio(contentMode: .fit)
+                    Text("\nOff-Campus Support").bold().foregroundColor(Color.red)
+                    Text("Community Counselors:").bold()
+                    Text("\u{2022} Andrew Nathan, Psy D., 14 Front Street Exeter NH")
                     teleButton(text: "603-772-3462")
-                    Text("14 Front Street Exeter NH \n \t \u{2022} Beth Salvi-Hudgins, LICSW")
+                    Text("\u{2022} Beth Salvi-Hudgins, LICSW")
                     teleButton(text: "603-773-5899")
-                    Text("\n \t \u{2022} Jane Woodard, LICSW")
+                    Text("\u{2022} Jane Woodard, LICSW, 2 Franklin Street Exeter NH")
                     teleButton(text: "603-773-5899")
-                    Text("2 Franklin Street Exeter NH \n \t \u{2022} Lynn Perrin-Wilhousky, LICSW")
-                    teleButton(text: "603-778-7433")
-                    Text("Exeter Counseling Center \n \u{2022} HAVEN \n \t \u{2022} Violence Prevention and Sexual Assault Support Services:")
-                    Button("http://havennh.org/") {UIApplication.shared.open(URL(string: "http://havennh.org/")!)}
-                    Text("\n \t \u{2022} 24-hour confidential hotline:")
+                    Text("\u{2022} Lynn Perrin-Wilhousky, LICSW")
                 }
                 VStack(alignment: .leading, spacing: 10) {
+                    teleButton(text: "603-778-7433")
+                    Text("\nHAVEN").bold()
+                    Text("\u{2022} Violence Prevention and Sexual Assault Support Services:")
+                    Button("http://havennh.org/") {UIApplication.shared.open(URL(string: "http://havennh.org/")!)}
+                    Text("\u{2022} 24-hour confidential hotline:")
                     teleButton(text: "603-994-7263")
-                    Text("\n \t \u{2022} Advocacy \n \t \u{2022} Counseling and support group referrals \n \u{2022} Exeter Police Department:")
+                    Text("\u{2022} Advocacy \n\u{2022} Counseling and support group referrals \n")
+                    Text("Exeter Police Department:").bold()
                     teleButton(text: "603-772-1212")
                     Button("http://exeternh.gov/police") {UIApplication.shared.open(URL(string: "http://exeternh.gov/police")!)}
-                    Text("PEA's Practice and Programs:")
+                }
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("\nPEA's Practice and Programs:").bold()
                     Button("https://www.exeter.edu/home/about-us/our-commitment-safety/practice-programs") {UIApplication.shared.open(URL(string: "https://www.exeter.edu/home/about-us/our-commitment-safety/practice-programs")!)}
-                    Image("img1").resizable().aspectRatio(contentMode: .fit)
-                    Text("Credit to Phillips Exeter Academy")
+                    Text("Credit to Phillips Exeter Academy").font(.body).italic().padding(15)
                 }
             }.navigationBarTitle("Resources for PEA Students", displayMode: .inline)
             .offset(y: 30)
