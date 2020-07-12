@@ -44,7 +44,7 @@ struct ProcrastinationView: View {
             Text("1. Recognize that motivation follows action. Don’t wait until you feel like doing some task. Instead, begin it. \n2. Clearly define at least one task you are putting off. \n3. Do a cost-benefit analysis. Write a list of the advantages and disadvantages of continuing to put off this task. \n4. Question the excuses you make. This can be enlightening. \n5. Write down a specific time to start the task. \n6. Make a list of distractions or problems that could conceivably prevent you from following through. Now write down how you will combat each of these obstacles. \n7. Start small. Make the job easier by breaking it into modest, realistic pieces, interspersed with appropriate rewards. \n8. Think positively and challenge those thoughts that may be contributing to procrastination (e.g., perfectionism, should statements, self-blaming, waiting until you feel like doing it).\n")
             Text("Work Backwards").bold()
             Text("1. Imagine having already achieved the task you’re putting off. How do you feel, look, behave, and sound? \n2. Work backwards from that image. Exactly what steps did you need to take to get there? \n3. Write down the steps you visualized needing to achieve this goal. Be specific and realistic. \n4. Write a self-contract that formalizes your goal and your action plans clearly and precisely. \n5. Specify an appropriate, incremental set of rewards and begin now the first step toward finishing your task.")
-            Text("From Counseling & Psychological Services, Phillips Exeter Academy").font(.body).italic().padding(15)
+            Text("From Counseling & Psychological Services, Phillips Exeter Academy").italic()
         }
         }.navigationBarTitle("Procrastination", displayMode: .inline)
         .offset(y: 30)
@@ -57,9 +57,9 @@ var body: some View {
     ScrollView(){
     VStack(alignment: .leading, spacing: 10) {
         Image("time").resizable().aspectRatio(contentMode: .fit)
-        Text("Exonian Advice").bold().foregroundColor(Color.red)
+        Text("\nExonian Advice").bold().foregroundColor(Color.red)
         Text("1. Use sleep-ins or any time before your first class of the day to finish homework or study for tests. Make sure to go to sleep early the night before so that you will be well rested in the morning. \n\n2. Find productive time throughout the day: the second half of lunch, uni-free, department and faculty meeting, etc. \n\n3. Studying for tests the night before should not mean learning that entire term’s work in one night. Make sure that you’re staying on top of your work throughout the term (i.e. doing all the math problems every night) so that test day is rest day.")
-        Text("From Meili Gupta, Class of 2020, Phillips Exeter Academy").font(.body).italic().padding(15)
+        Text("From Meili Gupta, Class of 2020, Phillips Exeter Academy").italic()
     }
     }.navigationBarTitle("Advice", displayMode: .inline)
     .offset(y: 30)

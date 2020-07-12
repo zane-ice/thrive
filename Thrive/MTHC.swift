@@ -106,7 +106,7 @@ extension MTHC{
             ScrollView{
                 VStack (alignment: .leading, spacing: 10) {
                     Text("About Counseling and Protective Services: ").bold().foregroundColor(Color.red)
-                    Text("Our licensed mental health professionals work with students on a confidential basis around a variety of issues and concerns, including: \n \u{2022} Adjustment and homesickness \n \u{2022} Stress management \n \u{2022} Depression \n \u{2022} Anxiety \n \u{2022} Grief and loss \n \u{2022} Eating \n \u{2022} Substance use \n \u{2022} Sexuality \n \u{2022} Relationships \n \u{2022} Family issues")
+                    Text("Our licensed mental health professionals work with students on a confidential basis around a variety of issues and concerns, including: \n\n \u{2022} Adjustment and homesickness \n \u{2022} Stress management \n \u{2022} Depression \n \u{2022} Anxiety \n \u{2022} Grief and loss \n \u{2022} Eating \n \u{2022} Substance use \n \u{2022} Sexuality \n \u{2022} Relationships \n \u{2022} Family issues")
                     Text("Students can meet one-on-one with counselors on a regular basis. All counseling services are free for students.Counselors offer small group workshops in anxiety reduction, stress management and other topics relevant to teen development. These are open to all interested students. Psychiatric services are offered on campus through an arrangement with a community psychiatrist. There is a charge for these appointments.")
                     Text("Counselors are on-call for emergencies 24/7. To make an appointment please call:")
                     teleButton(text: "603.777.3420")
