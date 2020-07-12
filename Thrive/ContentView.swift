@@ -50,6 +50,9 @@ struct ContentView: View {
 						NavigationLink(destination: ContactView()){
 							menuButton(text: "Contact", imageurl: "number")
 						}
+						NavigationLink(destination: AboutThrive()){
+							menuButton(text: "About Thrive", imageurl: "heart.fill")
+						}
 						}
 					}
 				}
