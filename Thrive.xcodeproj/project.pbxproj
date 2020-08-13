@@ -36,6 +36,7 @@
 		CB10CEE0246DC09E00678C72 /* player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB10CEDF246DC09E00678C72 /* player.swift */; };
 		CB10CEE2246DC2D800678C72 /* teleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB10CEE1246DC2D800678C72 /* teleButton.swift */; };
 		CB52C7D524BBA32F009BE145 /* AboutThrive.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB52C7D424BBA32F009BE145 /* AboutThrive.swift */; };
+		CBE3F14D24E5D78400DA6CA2 /* covid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE3F14C24E5D78400DA6CA2 /* covid.swift */; };
 		E662EFFF2452156A00D82FF7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E662EFFE2452156A00D82FF7 /* MapView.swift */; };
 		E67B9D42238093880038B6C7 /* Wellness.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67B9D41238093880038B6C7 /* Wellness.swift */; };
 		E68DFBBF247880AA00606627 /* bulletText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68DFBBE247880AA00606627 /* bulletText.swift */; };
@@ -95,6 +96,7 @@
 		CB10CEDF246DC09E00678C72 /* player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = player.swift; sourceTree = "<group>"; };
 		CB10CEE1246DC2D800678C72 /* teleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teleButton.swift; sourceTree = "<group>"; };
 		CB52C7D424BBA32F009BE145 /* AboutThrive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutThrive.swift; sourceTree = "<group>"; };
+		CBE3F14C24E5D78400DA6CA2 /* covid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = covid.swift; sourceTree = "<group>"; };
 		E662EFFE2452156A00D82FF7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		E67B9D41238093880038B6C7 /* Wellness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wellness.swift; sourceTree = "<group>"; };
 		E68DFBBE247880AA00606627 /* bulletText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bulletText.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				AAAB371E236E123800B8B6D8 /* TimeManagement.swift */,
 				AAAB37122369BD2000B8B6D8 /* ContactView.swift */,
 				AAB6C13D23825E50000DB073 /* Contact.swift */,
+				CBE3F14C24E5D78400DA6CA2 /* covid.swift */,
 				E662EFFE2452156A00D82FF7 /* MapView.swift */,
 				AABCBD5A235F50E300B759F3 /* Assets.xcassets */,
 				AABCBD5F235F50E300B759F3 /* LaunchScreen.storyboard */,
@@ -368,6 +371,7 @@
 				AAAB37132369BD2000B8B6D8 /* ContactView.swift in Sources */,
 				AAAB371B236E109400B8B6D8 /* Identity.swift in Sources */,
 				E67B9D42238093880038B6C7 /* Wellness.swift in Sources */,
+				CBE3F14D24E5D78400DA6CA2 /* covid.swift in Sources */,
 				E68DFBBF247880AA00606627 /* bulletText.swift in Sources */,
 				AAAB3721236E125300B8B6D8 /* SexualWellness.swift in Sources */,
 			);

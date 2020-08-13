@@ -29,6 +29,9 @@ struct ContentView: View {
 						NavigationLink(destination: MTHC()){
 							menuButton(text: "Meet the Health Center", imageurl: "person.2.fill")
 						}
+						NavigationLink(destination: covid()){
+							menuButton(text: "COVID-19", imageurl: "heart.fill")
+						}
 						NavigationLink(destination: MentalHealth()){
 							menuButton(text: "Mental Health", imageurl: "smiley.fill")
 						}
